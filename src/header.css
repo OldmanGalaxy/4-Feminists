@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "thorin";
+    src: url("./thorin/ttf/f24q220-thorin-thorin-regular-400.ttf");
+}
+
+@font-face {
+    font-family: "precious";
+    src: url("./precious/1001fonts-precious-eula.txt")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 7vw;
+    background-color: #254336;
+}
+
+.logo {
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    height: 5vw;
+    transition: 1s;
+}
+
+.logo:hover {
+    scale: 1.5;
+    transition: 1s;
+}
+
+.logo-img-container {
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container {
+    font-size: 2.5vw;
+    font-family: "thorin";
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container {
+    display: flex;
+}
+
+.forest {
+    color: #6B8A7A;
+    font-family: "precious";
+    font-weight: 900;
+}
+
+.focus {
+    color: #DAD3BE;
+    font-family: "precious";
+    font-weight: 900;
+}
+
+.link {
+    font-size: 1.5vw;
+    font-family: "thorin";
+    font-weight: 500;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 100%;
+    transition: 1s;
+}
+
+.link:hover {
+    font-size: 2vw;
+    text-shadow: #DAD3BE 0px 0px 20px;
+    transition: 1s;
+}
+
+.title-link-container {
+    display: flex;
+    transition: 1s;
+}
+
+.title-link:hover {
+    color: #B7B597;
+    font-size: 3vw;
+    transition: 1s;
+}
+
+a {
+    text-decoration: none;
+    color: #DAD3BE;
+}
