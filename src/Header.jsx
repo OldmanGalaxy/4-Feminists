@@ -16,7 +16,7 @@ export default function Header() {
             <div className="logo-container">
                 <div className="logo-img-container">
                     <a href="" className="logo-link">
-                        <img src="./assets/logo.png" className="logo" alt="logo"></img>
+                        <img src="assets/logo.png" className="logo" alt="logo"></img>
                     </a>
                 </div>
                 <div className="title-container">
