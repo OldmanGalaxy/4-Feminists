@@ -39,7 +39,7 @@
 }
 
 .logo-container {
-    font-size: 2.5vw;
+    font-size: 2.2vw;
     font-family: "thorin";
     display: flex;
     flex-direction: column;
@@ -86,7 +86,7 @@
 
 .title-link:hover {
     color: #B7B597;
-    font-size: 3vw;
+    font-size: 2.5vw;
     transition: 1s;
 }
 
