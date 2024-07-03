@@ -36,7 +36,7 @@ export default class SceneInit {
       antialias: true,
     });
     this.renderer.setSize(window.innerWidth, window.innerHeight);
-    this.renderer.setClearColor(0x87CEEB, 1);
+    this.renderer.setClearColor(0xDAD3BE, 1);
     document.body.appendChild(this.renderer.domElement);
 
     this.clock = new THREE.Clock();
