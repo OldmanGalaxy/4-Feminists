@@ -1,13 +1,12 @@
 import {useEffect, useState} from 'react';
 import SceneInit from './lib/SceneInit.js';
 import * as three from 'three';
-import gsap from 'gsap-trial';
-import {SplitText} from 'gsap-trial/SplitText';
+import gsap from 'gsap';
 import {GLTFLoader} from 'three/examples/jsm/Addons.js';
 import '../src/background.css'
+import SplitType from 'split-type';
 
 export default function Background() {
-  gsap.registerPlugin(SplitText);
   const [visibility, setVisibility] = useState(0);
   useEffect(() => {
     const test = new SceneInit("testing");
@@ -28,23 +27,22 @@ export default function Background() {
 
     function load_title() {
       setVisibility(1);
-      let splittedText = new SplitText('.title', {type: 'chars'});
-      let chars = splittedText.chars;
-      gsap.from(chars, {
-        yPercent: 130,
-        stagger: 0.2,
-        ease: 'bounce.in',
+      const text = new SplitType(".title");
+      gsap.to('.char', {
+        y: 0,
+        stagger: 0.05,
+        delay: 0.2,
+        duration: 0.1
       });
     }
     setTimeout(() => load_title(), 1500);
 
     function remove_title() {
-      let splittedText = new SplitText('.title', {type: 'chars'});
-      let chars = splittedText.chars;
-      gsap.to(chars, {
-        yPercent: 130,
-        stagger: 0.2,
-        ease: 'bounce.out',
+      gsap.to('.char', {
+        y: '115vw',
+        stagger: 0.05,
+        delay: 0.2,
+        duration: 0.1
       });
       setTimeout(() => load_bg(), 1000);
     }

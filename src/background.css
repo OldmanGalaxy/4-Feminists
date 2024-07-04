@@ -24,3 +24,8 @@
     font-family: "precious";
     font-weight: bolder;
 }
+
+.char {
+    transform: translateY(115vw);
+    transition: transform 0.5s;
+}
