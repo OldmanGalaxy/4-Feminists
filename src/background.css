@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "precious";
+    src: url("public/assets/fonts/precious/Precious.ttf")
+}
+
+.text-box-container {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.text {
+    margin: 1vw;
+    font-size: 14vw;
+    text-shadow: #6B8A7A 0px 0px 20px;
+    color: #6B8A7A;
+    font-family: "precious";
+    font-weight: bolder;
+}

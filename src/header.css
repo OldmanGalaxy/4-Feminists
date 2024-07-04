@@ -17,6 +17,7 @@
     display: flex;
     justify-content: space-evenly;
     height: 7vw;
+    width: 100vw;
     background-color: #254336;
 }
 
@@ -71,6 +72,8 @@
     flex-direction: column;
     line-height: 100%;
     transition: 1s;
+    width: 8vw;
+    text-align: center;
 }
 
 .link:hover {

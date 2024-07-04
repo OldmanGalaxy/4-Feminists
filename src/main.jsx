@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Background from './Background.jsx'
 import Header from './Header.jsx'
+import Trees from './Trees.jsx'
+import Background from './Background.jsx'
 import './header.css'
 import './index.css'
 
