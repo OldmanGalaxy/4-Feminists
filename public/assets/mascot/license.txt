@@ -1,0 +1,11 @@
+Model Information:
+* title:	Mushroom Warrior
+* source:	https://sketchfab.com/3d-models/mushroom-warrior-f0ab1da8d7e74759b5bea8618c350914
+* author:	Meow-Vortex (https://sketchfab.com/meow-vortex)
+
+Model License:
+* license type:	CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions can not be distributed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Mushroom Warrior" (https://sketchfab.com/3d-models/mushroom-warrior-f0ab1da8d7e74759b5bea8618c350914) by Meow-Vortex (https://sketchfab.com/meow-vortex) licensed under CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)

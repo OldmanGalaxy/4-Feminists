@@ -37,7 +37,7 @@ export default class SceneInit {
     });
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     this.renderer.setClearColor(0xDAD3BE, 1);
-    document.body.appendChild(this.renderer.domElement);
+    document.getElementsByClassName("div-model")[0].appendChild(this.renderer.domElement);
 
     this.clock = new THREE.Clock();
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);

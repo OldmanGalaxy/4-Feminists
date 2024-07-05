@@ -1,14 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Header from './Header.jsx'
-import Trees from './Trees.jsx'
+import Leaves from './Leaves.jsx'
 import Background from './Background.jsx'
-import './header.css'
 import './index.css'
+import Navbar from './Navbar.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Header />
+    <Navbar />
     <Background />
-  </React.StrictMode>,
+  </React.StrictMode>
 )

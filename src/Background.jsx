@@ -19,17 +19,11 @@ export default function Background() {
       gsap.to(test.camera.position, {x:0, y:5, z:30, duration:3});
     };
 
-    function disable_scrolling() {
-      window.onscroll = function () {
-        window.scrollTo(screenLeft, screenTop);
-      };
-    }
-
     function load_title() {
       setVisibility(1);
       const text = new SplitType(".title");
       gsap.to('.char', {
-        y: 0,
+        y: "8vh",
         stagger: 0.05,
         delay: 0.2,
         duration: 0.1
@@ -39,7 +33,7 @@ export default function Background() {
 
     function remove_title() {
       gsap.to('.char', {
-        y: '115vw',
+        y: '105vw',
         stagger: 0.05,
         delay: 0.2,
         duration: 0.1
