@@ -11,6 +11,7 @@
 .text-box-container {
     position: absolute;
     width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -18,11 +19,12 @@
 
 .text {
     margin: 1vw;
-    font-size: 14vw;
+    font-size: 12vw;
     text-shadow: #6B8A7A 0px 0px 20px;
     color: #6B8A7A;
     font-family: "precious";
     font-weight: bolder;
+    cursor: default;
 }
 
 .char {
