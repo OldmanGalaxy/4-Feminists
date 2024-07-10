@@ -1,0 +1,11 @@
+Model Information:
+* title:	Crazy Critter Crate - Madcap
+* source:	https://sketchfab.com/3d-models/crazy-critter-crate-madcap-3cd16b9c97ab4e6cae0cec9a19f1223b
+* author:	Moped (https://sketchfab.com/mopedgames)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Crazy Critter Crate - Madcap" (https://sketchfab.com/3d-models/crazy-critter-crate-madcap-3cd16b9c97ab4e6cae0cec9a19f1223b) by Moped (https://sketchfab.com/mopedgames) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

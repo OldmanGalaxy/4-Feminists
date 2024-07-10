@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Our Amazing Company</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #80AF81;
+            color: #fff;
+            transition: background-color 0.3s ease;
+            /* transition: color 0.3s ease; */
+        }
+        
+        .header:hover {
+            background-color: #1A5319;
+            /* color: #333; */
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .header p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: slideUp 1s ease-in-out;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature i {
+            font-size: 3rem;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .company-values {
+            margin-top: 50px;
+            padding: 50px 0;
+            background-image: linear-gradient(to bottom right,#6B8A7A, #DAD3BE,#6B8A7A), url('https://source.unsplash.com/random/1600x900');
+            background-size: cover;
+            background-position: center;
+            color: #254336;
+        }
+
+        .company-values .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .values-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .value-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .value-item:hover {
+            background-color: rgba(4, 75, 19, 0.2);
+        }
+
+        .value-item i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Growing Awareness, Saving the Woods</h1>
+            <p>Delving into the world of forestry: Discover the vital role of trees in our ecosystems and economy. From ancient woodlands to urban greenspaces, explore how forests shape our planet and our future.</p>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="feature">
+            <i class="fas fa-rocket"></i>
+            <h3>Innovation</h3>
+            <p>Cutting-edge forest mapping technologies.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-users"></i>
+            <h3>Collaboration</h3>
+            <p>Partnerships with leading environmental organizations.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Security</h3>
+            <p>Real-time wildfire detection and response systems, conservation plans for endangered forest species.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-chart-line"></i>
+            <h3>Growth</h3>
+            <p>Tracking tools for forest expansion and health.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-globe"></i>
+            <h3>Global Reach</h3>
+            <p>Global network of forestry professionals.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-handshake"></i>
+            <h3>Your Opportuinity to Contribute</h3>
+            <p>Volunteering opportunities in local forest management.</p>
+        </div>
+    </section>
+
+    <section class="company-values">
+        <div class="container">
+            <div class="values-content">
+                <h2>OUR COMPANY VALUES</h2>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <i class="fas fa-heart"></i>
+                        <h3>Passion</h3>
+                        <p>We love what we do and it shows in our work.</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-balance-scale"></i>
+                        <h3>Integrity</h3>
+                        <p>Honesty and transparency in all our dealings.</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Creativity</h3>
+                        <p>Thinking outside the box to solve complex problems.</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>Commitment</h3>
+                        <p>Dedicated to our clients' success and satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><i class="fas fa-envelope"></i> u23cs043@coed.svnit.ac.in</p>
+                <p><i class="fab fa-instagram"></i> @lost_alchemist69</p>
+                <p><i class="fas fa-phone"></i> +91 88665 53798</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const features = document.querySelectorAll('.feature');
+            const valueItems = document.querySelectorAll('.value-item');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            features.forEach(feature => {
+                feature.style.opacity = 0;
+                feature.style.transform = 'translateY(50px)';
+                observer.observe(feature);
+            });
+
+            valueItems.forEach(item => {
+                item.style.opacity = 0;
+                item.style.transform = 'translateY(50px)';
+                observer.observe(item);
+            });
+        });
+    </script>
+</body>
+</html>

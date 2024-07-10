@@ -1,18 +1,22 @@
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/Addons.js';
 
-export default class SceneInit {
+export default class animalScene {
   constructor(canvasId) {
+    this.dimensions = document.getElementsByClassName('canvas-container')[0].getBoundingClientRect();
+    this.height = this.dimensions.height;
+    this.width = this.dimensions.width;
     this.scene = undefined;
     this.camera = undefined;
     this.renderer = undefined;
 
     this.fov = 40;
-    this.nearPlane = 1;
+    this.nearPlane = 0.1;
     this.farPlane = 1000;
     this.canvasId = canvasId;
 
     this.controls = undefined;
+    this.clock = new THREE.Clock();
 
     this.ambientLight = undefined;
     this.directionalLight = undefined;
@@ -22,23 +26,27 @@ export default class SceneInit {
     this.scene = new THREE.Scene();
     this.camera = new THREE.PerspectiveCamera(
       this.fov,
-      window.innerWidth / window.innerHeight,
+      this.width / this.height, // w / h
       1,
       1000
     );
-    this.camera.position.z = 35;
-    this.camera.position.y = -2;
 
     const canvas = document.getElementById(this.canvasId);
     this.renderer = new THREE.WebGLRenderer({
       canvas,
       antialias: true,
     });
-    this.renderer.setSize(window.innerWidth, window.innerHeight);
-    this.renderer.setClearColor(0xDAD3BE, 1);
+    this.camera.position.x = -2;
+    this.camera.position.y = -1;
+    this.camera.position.z = 30;
+    this.renderer.setSize(this.width, this.height);
+    this.renderer.setClearColor(0xB7B597, 1);
     document.getElementsByClassName("canvas-container")[0].appendChild(this.renderer.domElement);
 
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
+    // this.controls.target.x = 0;
+    // this.controls.target.y = 150;
+    // this.controls.target.z = -5;
 
     this.ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
     this.ambientLight.castShadow = true;
@@ -58,11 +66,13 @@ export default class SceneInit {
 
   render() {
     this.renderer.render(this.scene, this.camera);
+    // console.log("Position: " + this.camera.position.x + "," + this.camera.position.y + "," + this.camera.position.z);
+    // console.log("Target: " + this.controls.target.x + "," + this.controls.target.y + "," + this.controls.target.z);
   }
 
   onWindowResize() {
-    this.camera.aspect = window.innerWidth / window.innerHeight;
+    this.camera.aspect = this.width / this.height;
     this.camera.updateProjectionMatrix();
-    this.renderer.setSize(window.innerWidth, window.innerHeight);
+    this.renderer.setSize(this.width, this.height);
   }
 };

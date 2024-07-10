@@ -1,9 +1,9 @@
 import { useEffect, useState, useRef } from 'react';
-import SceneInit from './lib/SceneInit.js';
 import { GLTFLoader } from 'three/examples/jsm/Addons.js';
 import gsap from 'gsap';
 import SplitType from 'split-type';
 import '../src/background.css';
+import SceneInit from './lib/SceneInit.js';
 
 export default function Background() {
   const sceneRef = useRef(null);
@@ -20,6 +20,10 @@ export default function Background() {
     function load_bg() {
       gsap.to(test.controls.target, {x:0, y:0, z:-8, duration:3});
       gsap.to(test.camera.position, {x:0, y:120, z:-5, duration:3});
+      gsap.to('.text-box-container', {
+        height: 0,
+        duration: 1
+      });
     }
 
     function preload_title() {
@@ -72,7 +76,7 @@ export default function Background() {
           x: 0 - scrollProgress * 15,
           y: 120 - scrollProgress * 115,
           z: -5 + scrollProgress * 30,
-          duration: 0.5
+          duration: 1
         });
     
         if (sceneRef.current.controls) {
@@ -80,7 +84,7 @@ export default function Background() {
             x: scrollProgress * 12,
             y: scrollProgress * 4,
             z: -8 + scrollProgress * 2,
-            duration: 0.5
+            duration: 1
           });
         }
       } else if (scrollProgress <= 2) {
@@ -89,7 +93,7 @@ export default function Background() {
           x: -15 - secondScrollProgress * 10,
           y: 5 + secondScrollProgress * 3,
           z: 25 + secondScrollProgress * 5,
-          duration: 0.5
+          duration: 1
         });
     
         if (sceneRef.current.controls) {
@@ -97,7 +101,7 @@ export default function Background() {
             x: 12 + secondScrollProgress * 8,
             y: 4 - secondScrollProgress * 8,
             z: -6 - secondScrollProgress * 10,
-            duration: 0.5
+            duration: 1
           });
         }
       }
@@ -107,7 +111,7 @@ export default function Background() {
           x: -25 + thirdScrollProgress * 25, //0
           y: 8, //8
           z: 30 + thirdScrollProgress * 10, //40
-          duration: 0.5
+          duration: 1
         });
     
         if (sceneRef.current.controls) {
@@ -115,7 +119,7 @@ export default function Background() {
             x: 20 - thirdScrollProgress * 14, //6
             y: -4 + thirdScrollProgress * 6, //2
             z: -16 + thirdScrollProgress * 16, //0
-            duration: 0.5
+            duration: 1
           });
         }
       }
@@ -131,13 +135,17 @@ export default function Background() {
   }, []);
 
   return (
+    <>
     <div className="div-model" style={{ height: '100vh', overflow: 'hidden' }}>
       <div className="text-box-container">
         <div className="text">
           <h1 className='title'>Loading</h1>
         </div>
       </div>
-      <canvas id="testing"></canvas>
+      <div className="canvas-container">
+        <canvas id="testing"></canvas>
+      </div>
     </div>
+    </>
   );
 }
