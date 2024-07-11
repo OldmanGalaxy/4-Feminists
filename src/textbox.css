@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "chopin";
+  src: url('../public/assets/fonts/chopin/ChopinScript.otf');
+}
+
+@font-face {
+  font-family: "thorin";
+  src: url('../public/assets/fonts/thorin/ttf/thorin.ttf');
+}
+
+.textbox-container {
+    position: absolute;
+    background: #254336;
+    border: 2px solid #6B8A7A;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    margin: 2rem auto;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 0;
+  }
+  
+  .textbox-content {
+    position: relative;
+  }
+  
+  .textbox-title {
+    font-size: 1.5rem;
+    background-color: #6B8A7A;
+    color: #DAD3BE;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-family: "chopin";
+  }
+  
+  .textbox-paragraph {
+    font-size: 1rem;
+    color: #DAD3BE;
+    line-height: 1.5;
+    font-family: 'thorin';
+  }
+  
+  .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: #b7b597;
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+    pointer-events: none;
+  }
+  
+  @keyframes ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+  
+  .firefly-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .firefly {
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: yellow;
+    box-shadow: 0px 0px 10px yellow;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  
+  @media (min-width: 480px) {
+    .textbox-container {
+      padding: 2.5rem;
+    }
+  
+    .textbox-title {
+      font-size: 1.75rem;
+      padding: 0.75rem;
+    }
+  
+    .textbox-paragraph {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .textbox-container {
+      padding: 3rem;
+    }
+  
+    .textbox-title {
+      font-size: 2rem;
+      padding: 1rem;
+    }
+  
+    .textbox-paragraph {
+      font-size: 1.2rem;
+    }
+  }
+  
