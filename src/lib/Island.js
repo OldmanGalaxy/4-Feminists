@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/Addons.js';
 
-export default class SceneInit {
+export default class Island {
   constructor(canvasId) {
     this.scene = undefined;
     this.camera = undefined;

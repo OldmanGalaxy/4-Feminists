@@ -8,6 +8,10 @@
   src: url('../public/assets/fonts/thorin/ttf/thorin.ttf');
 }
 
+* {
+    cursor: default;
+}
+
 .textbox-container {
     position: absolute;
     background: #254336;
@@ -17,51 +21,55 @@
     padding: 2rem;
     width: 90%;
     max-width: 400px;
-    margin: 2rem auto;
+    height: 22rem;
+    margin: 0;
     text-align: center;
     overflow: hidden;
     box-sizing: border-box;
-    z-index: 0;
-  }
-  
-  .textbox-content {
     position: relative;
-  }
-  
-  .textbox-title {
+    z-index: -2;
+}
+
+.textbox-content {
+    position: relative;
+    z-index: 0;
+}
+
+.textbox-title {
     font-size: 1.5rem;
     background-color: #6B8A7A;
     color: #DAD3BE;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 10px;
     margin-bottom: 1rem;
     font-family: "chopin";
-  }
-  
-  .textbox-paragraph {
+}
+
+.textbox-paragraph {
     font-size: 1rem;
     color: #DAD3BE;
     line-height: 1.5;
     font-family: 'thorin';
-  }
-  
-  .ripple {
+    margin-bottom: 1.5rem;
+}
+
+.ripple {
     position: absolute;
     border-radius: 50%;
     background: #b7b597;
     transform: scale(0);
     animation: ripple 0.6s linear;
     pointer-events: none;
-  }
-  
-  @keyframes ripple {
+}
+
+@keyframes ripple {
     to {
-      transform: scale(4);
-      opacity: 0;
+        transform: scale(4);
+        opacity: 0;
     }
-  }
-  
-  .firefly-container {
+}
+
+.firefly-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -69,9 +77,9 @@
     height: 100%;
     overflow: hidden;
     z-index: -1;
-  }
-  
-  .firefly {
+}
+
+.firefly {
     position: absolute;
     width: 0.5rem;
     height: 0.5rem;
@@ -79,35 +87,54 @@
     box-shadow: 0px 0px 10px yellow;
     border-radius: 50%;
     opacity: 0;
-  }
-  
-  @media (min-width: 480px) {
+}
+
+.textbox-link {
+    background-color: #6B8A7A;
+    border-radius: 0.8rem;
+    font-weight: bolder;
+    padding: 0.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-family: "thorin";
+    color: #DAD3BE;
+    transition-duration: 0.5s;
+}
+
+.textbox-link:hover {
+    text-shadow: 0px 0px 10px #b7b597;
+    font-size: 1.8rem;
+}
+
+@media (min-width: 480px) {
     .textbox-container {
-      padding: 2.5rem;
+        padding: 2.5rem;
     }
-  
+
     .textbox-title {
-      font-size: 1.75rem;
-      padding: 0.75rem;
+        font-size: 1.75rem;
+        padding: 0.75rem;
     }
-  
+
     .textbox-paragraph {
-      font-size: 1.1rem;
+        font-size: 1.1rem;
     }
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .textbox-container {
-      padding: 3rem;
+        padding: 3rem;height: 28rem;
     }
-  
+
     .textbox-title {
-      font-size: 2rem;
-      padding: 1rem;
+        font-size: 2rem;
+        padding: 1rem;
     }
-  
+
     .textbox-paragraph {
-      font-size: 1.2rem;
+        font-size: 1.2rem;
     }
-  }
-  
+}

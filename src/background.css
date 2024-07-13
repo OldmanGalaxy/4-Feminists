@@ -31,3 +31,7 @@
     transform: translateY(115vw);
     transition: transform 0.5s;
 }
+
+.island {
+    z-index: -99;
+}

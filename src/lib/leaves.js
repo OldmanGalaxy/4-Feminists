@@ -1,4 +1,4 @@
-function generateLeafParticles() {
+function generateLeaves() {
     const canvas = document.createElement('canvas');
     canvas.style.position = 'fixed';
     canvas.style.top = '0';
@@ -36,13 +36,11 @@ function generateLeafParticles() {
             this.rotation += Math.random() * 0.05 - 0.025;
 
             const elapsedTime = Date.now() - this.fadeStart;
-            if (elapsedTime > this.fadeInterval) {
+            if (elapsedTime > this.fadeInterval)
                 this.opacity -= 0.005;
-            }
 
-            if (this.opacity <= 0) {
+            if (this.opacity <= 0)
                 particles.splice(particles.indexOf(this), 1);
-            }
         }
 
         draw() {
@@ -56,9 +54,8 @@ function generateLeafParticles() {
     }
 
     function createParticles(x, y) {
-        if (particles.length < maxParticles) {
+        if (particles.length < maxParticles)
             particles.push(new Particle(x, y));
-        }
     }
 
     function animate() {
@@ -70,7 +67,15 @@ function generateLeafParticles() {
         requestAnimationFrame(animate);
     }
 
+    let lastCall = 0;
+    const throttle = 35;
+
     const mouseMoveHandler = (event) => {
+        const now = Date.now();
+        if (now - lastCall < throttle)
+            return;
+        lastCall = now;
+
         const rect = canvas.getBoundingClientRect();
         const mouseX = event.clientX - rect.left;
         const mouseY = event.clientY - rect.top;
@@ -97,4 +102,4 @@ function generateLeafParticles() {
     };
 }
 
-generateLeafParticles();
+generateLeaves();

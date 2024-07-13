@@ -1,14 +1,15 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect,children } from 'react';
 import { gsap } from 'gsap';
 import './textbox.css';
 
-const Textbox = (props) => {
+const Textbox = ({children}) => {
   const containerRef = useRef(null);
 
   const createRipple = (event) => {
+    const container = containerRef.current;
     const ripple = document.createElement('span');
     ripple.className = 'ripple';
-    const rect = event.target.getBoundingClientRect();
+    const rect = container.getBoundingClientRect();
     const size = Math.max(rect.width, rect.height);
     const x = event.clientX - rect.left - size / 2;
     const y = event.clientY - rect.top - size / 2;
@@ -17,7 +18,7 @@ const Textbox = (props) => {
     ripple.style.left = `${x}px`;
     ripple.style.top = `${y}px`;
 
-    event.target.appendChild(ripple);
+    container.appendChild(ripple);
 
     setTimeout(() => {
       ripple.remove();
@@ -34,8 +35,8 @@ const Textbox = (props) => {
   const animateFirefly = (firefly) => {
     const tl = gsap.timeline({ repeat: -1, yoyo: true });
     tl.to(firefly, {
-      x: 'random(-200, 200)',
-      y: 'random(-200, 200)',
+      x: 'random(-100, 100)',
+      y: 'random(-100, 100)',
       opacity: 'random(0.3, 0.8)',
       duration: 'random(3, 6)',
       ease: 'power1.inOut',
@@ -44,18 +45,7 @@ const Textbox = (props) => {
 
   return (
     <div className="textbox-container" ref={containerRef} onClick={createRipple}>
-      <div className="textbox-content">
-        <h2 className="textbox-title">{props.title}</h2>
-        <p className="textbox-paragraph">
-            {props.text}
-        </p>
-      </div>
-      <div className="firefly-container">
-        {[...Array(20)].map((_, i) => (
-          <div key={i} className="firefly"></div>
-        ))}
-      </div>
-      <span className="ripple"></span>
+      {children}
     </div>
   );
 };
