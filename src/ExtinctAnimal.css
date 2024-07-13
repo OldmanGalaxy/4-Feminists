@@ -1,0 +1,138 @@
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+@font-face {
+  font-family: "thorin";
+  src: url("../public/assets/fonts/thorin/ttf/thorin.ttf");
+}
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #DAD3BE;
+    min-height: 40vh;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #6B8A7A;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-height: 90vh;
+  }
+  
+  .text-container {
+    flex: 1;
+    padding: 20px;
+    color: #DAD3BE;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #254336;
+    overflow-y: auto;
+  }
+  
+  .image-container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 30px;
+  }
+
+  strong {
+    font-family: "thorin";
+  }
+
+  h2 {
+    font-family: "thorin";
+    font-weight: bolder;
+    font-size: 2.2rem;
+  }
+  
+  .image-box {
+    width: 100%;
+    max-width: 300px;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image {
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.3s;
+  }
+  
+  .image:hover {
+    transform: scale(1.05);
+  }
+  
+  .alt-text {
+    color: #DAD3BE;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .link {
+    color: #DAD3BE;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "thorin";
+    cursor: pointer;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .button {
+    margin-top: auto;
+    padding: 10px 20px;
+    background-color: #B7B597;
+    color: #254336;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    align-self: center;
+    font-family: "thorin";
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .button:hover {
+    box-shadow: 0px 0px 10px #DAD3BE;
+    transform: scale(1.05);
+  }
+  
+  .loading, .error {
+    color: #254336;
+    font-size: 20px;
+  }
+  
+  .spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #254336;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+    margin-top: 20px;
+  }  

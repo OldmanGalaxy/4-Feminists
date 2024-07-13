@@ -3,7 +3,7 @@ import './navbar.css';
 import logo from '../public/assets/logo.png';
 import gsap from 'gsap';
 
- function Navbar() {
+ function Navbar(props) {
   const [sidebarVisible, setSidebarVisible] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
@@ -22,7 +22,7 @@ import gsap from 'gsap';
       display: "flex"
     });
   }, [loaded]);
-  setInterval(() => setLoaded(true), 8000);
+  setInterval(() => setLoaded(true), props.time);
 
   const showSidebar = () => {
     setSidebarVisible(true);

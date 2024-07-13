@@ -73,7 +73,8 @@ export default function Background() {
 
       const scrollProgress = scrollRef.current / 1000;
 
-      if (scrollProgress <= 1) {
+      if (scrollProgress <= 1)
+      {
         gsap.to(sceneRef.current.camera.position, {
           x: 0 - scrollProgress * 15,
           y: 120 - scrollProgress * 115,
@@ -87,7 +88,8 @@ export default function Background() {
           duration: 0.5,
         });
 
-        if (sceneRef.current.controls) {
+        if (sceneRef.current.controls)
+        {
           gsap.to(sceneRef.current.controls.target, {
             x: scrollProgress * 12,
             y: scrollProgress * 4,
@@ -95,7 +97,9 @@ export default function Background() {
             duration: 1,
           });
         }
-      } else if (scrollProgress <= 2) {
+      }
+      else if (scrollProgress <= 2)
+      {
         const secondScrollProgress = scrollProgress - 1;
         gsap.to(sceneRef.current.camera.position, {
           x: -15 - secondScrollProgress * 10,
@@ -116,7 +120,8 @@ export default function Background() {
           duration: 0.5,
         });
 
-        if (sceneRef.current.controls) {
+        if (sceneRef.current.controls)
+        {
           gsap.to(sceneRef.current.controls.target, {
             x: 12 + secondScrollProgress * 8,
             y: 4 - secondScrollProgress * 8,
@@ -124,7 +129,9 @@ export default function Background() {
             duration: 1,
           });
         }
-      } else {
+      }
+      else
+      {
         const thirdScrollProgress = scrollProgress - 2;
         gsap.to(sceneRef.current.camera.position, {
           x: -25 + thirdScrollProgress * 25, //0
@@ -145,7 +152,8 @@ export default function Background() {
           duration: 0.5,
         });
 
-        if (sceneRef.current.controls) {
+        if (sceneRef.current.controls)
+        {
           gsap.to(sceneRef.current.controls.target, {
             x: 20 - thirdScrollProgress * 14, //6
             y: -4 + thirdScrollProgress * 6, //2
@@ -160,6 +168,7 @@ export default function Background() {
       window.addEventListener("wheel", handleVirtualScroll, { passive: false });
       document.body.style.overflow = "scroll";
     }, 10500);
+
     return () => {
       window.removeEventListener("wheel", handleVirtualScroll);
     };
@@ -167,9 +176,7 @@ export default function Background() {
 
   return (
     <>
-      <div
-        className="div-model"
-        style={{ height: "100vh", overflow: "hidden" }}>
+      <div className="div-model" style={{ height: "100vh", overflow: "hidden" }}>
         <div className="text-box-container">
           <div className="text">
             <h1 className="title">Loading</h1>
@@ -179,9 +186,7 @@ export default function Background() {
           <canvas id="island"></canvas>
         </div>
       </div>
-      <div
-        className="first"
-        style={{ position: "absolute", top: "100%", opacity: "0", left: "5%", zIndex: 0 }}>
+      <div className="first" style={{ position: "absolute", top: "100%", opacity: "0", left: "5%", zIndex: 0 }}>
         <Textbox>
           <div className="textbox-content">
             <h2 className="textbox-title">Like Nature?</h2>
@@ -199,9 +204,7 @@ export default function Background() {
           </div>
         </Textbox>
       </div>
-      <div
-        className="second"
-        style={{ position: "absolute", top: "100%", opacity: "0", left: "5%", zIndex: 0 }}>
+      <div className="second" style={{ position: "absolute", top: "100%", opacity: "0", left: "5%", zIndex: 0 }}>
         <Textbox>
           <div className="textbox-content">
             <h2 className="textbox-title">Explore Wildlife</h2>
@@ -219,9 +222,7 @@ export default function Background() {
           </div>
         </Textbox>
       </div>
-      <div
-        className="third"
-        style={{ position: "absolute", top: "100%", opacity: "0", left: "5%", zIndex: 0 }}>
+      <div className="third" style={{ position: "absolute", top: "100%", opacity: "0", left: "5%", zIndex: 0 }}>
         <Textbox>
           <div className="textbox-content">
             <h2 className="textbox-title">Meet the Creators</h2>
