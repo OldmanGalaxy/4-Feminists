@@ -35,7 +35,7 @@ export default class Island {
       antialias: true,
     });
     this.renderer.setSize(window.innerWidth, window.innerHeight);
-    this.renderer.setClearColor(0xDAD3BE, 1);
+    this.renderer.setClearColor(0x87CEEB, 1);
     document.getElementsByClassName("canvas-container")[0].appendChild(this.renderer.domElement);
 
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);

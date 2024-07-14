@@ -8,5 +8,7 @@ import './lib/leaves.js'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Navbar time="8000"/>
+    <Background />
   </React.StrictMode>
 )
