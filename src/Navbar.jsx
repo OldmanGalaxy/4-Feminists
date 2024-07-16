@@ -83,6 +83,7 @@ import gsap from 'gsap';
         </li>
       </ul>
     </nav>
+    <div className="space"></div>
     </>
   );
 }

@@ -7,15 +7,11 @@
     font-family: "precious";
     src: url("public/assets/fonts/precious/Precious.ttf");
   }
-  
+
   * {
     margin: 0;
     padding: 0;
     z-index: 100;
-  }
-  
-  body {
-    min-height: 100vh;
   }
 
   .header-container {
@@ -174,3 +170,7 @@
       font-size: 2.5vh;
     }
   }
+
+.space {
+  padding-top: 15vh;
+}

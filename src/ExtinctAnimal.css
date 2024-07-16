@@ -22,10 +22,6 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #DAD3BE;
-    min-height: 100vh;
-    max-height: 100vh;
-    box-sizing: border-box;
   }
   
   .card {
