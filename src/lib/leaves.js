@@ -20,7 +20,7 @@ function generateLeaves() {
             this.y = y;
             this.size = Math.random() * 20 + 10;
             this.image = new Image();
-            this.image.src = '../public/assets/leaf.png';
+            this.image.src = './public/assets/leaf.png';
             this.speedX = Math.random() * 4 - 2;
             this.speedY = Math.random() * 2 + 1;
             this.rotation = Math.random() * 2 * Math.PI;
