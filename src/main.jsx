@@ -12,6 +12,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Navbar gap="false" time="8000"/>
     <Background/>
     */}
+    <Navbar gap="false" time="8000"/>
+    <Background/>
 
     {/* Wildlife = 
     <Navbar gap="true" time="0"/>
