@@ -1,4 +1,4 @@
-import leaf from '../../public/assets/leaf.png';
+import leaf from '/leaf.png';
 function generateLeaves() {
     const canvas = document.createElement('canvas');
     canvas.style.position = 'fixed';
@@ -21,7 +21,7 @@ function generateLeaves() {
             this.y = y;
             this.size = Math.random() * 20 + 10;
             this.image = new Image();
-            this.image.src = './public/assets/leaf.png';
+            this.image.src = '/leaf.png';
             this.speedX = Math.random() * 4 - 2;
             this.speedY = Math.random() * 2 + 1;
             this.rotation = Math.random() * 2 * Math.PI;

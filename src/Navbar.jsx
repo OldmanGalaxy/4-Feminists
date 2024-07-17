@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './navbar.css';
-import logo from '../public/assets/logo.png';
+import logo from '/logo.png';
 import gsap from 'gsap';
 
  function Navbar(props) {

@@ -1,11 +1,11 @@
 @font-face {
   font-family: "chopin";
-  src: url('../public/assets/fonts/chopin/ChopinScript.otf');
+  src: url('assets/fonts/chopin/ChopinScript.otf');
 }
 
 @font-face {
   font-family: "thorin";
-  src: url('../public/assets/fonts/thorin/ttf/thorin.ttf');
+  src: url('assets/fonts/thorin/ttf/thorin.ttf');
 }
 
 * {
