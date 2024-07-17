@@ -8,7 +8,8 @@ import './lib/leaves.js'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Navbar />
+    <Navbar gap="true" time="0"/>
     <ExtinctAnimal />
+    {/* <Background /> */}
   </React.StrictMode>
 )

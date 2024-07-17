@@ -22,7 +22,7 @@ import gsap from 'gsap';
       display: "flex"
     });
   }, [loaded]);
-  setInterval(() => setLoaded(true), props.time);
+  setTimeout(() => setLoaded(true), props.time);
 
   const showSidebar = () => {
     setSidebarVisible(true);
@@ -83,7 +83,7 @@ import gsap from 'gsap';
         </li>
       </ul>
     </nav>
-    <div className="space"></div>
+    {props.gap === 'true' ? (<div className="space" style={{paddingTop: "15vh"}}></div>) : (<p></p>)}
     </>
   );
 }

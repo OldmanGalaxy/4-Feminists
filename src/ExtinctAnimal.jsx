@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
 import './ExtinctAnimal.css';
 
@@ -30,7 +30,6 @@ const ExtinctAnimal = () => {
     fetchAnimalData();
   };
   
-
   return (
     <div className="container">
       {loading ? (
