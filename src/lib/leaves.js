@@ -1,3 +1,4 @@
+import leaf from '../../public/assets/leaf.png';
 function generateLeaves() {
     const canvas = document.createElement('canvas');
     canvas.style.position = 'fixed';
