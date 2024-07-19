@@ -54,3 +54,25 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.deforestation-info-container {
+    width: 40vw;
+    height: 75vh;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    background-color: #B7B597;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.deforestation-header-container {
+    text-align: center;
+    color: #DAD3BE;
+    font-size: 3rem;
+    font-weight: lighter;
+    font-family: 'thorin';
+    height: 15vh;
+    line-height: 15vh;
+    border-radius: 10px 10px 0 0;
+    background-color: #254336;
+}

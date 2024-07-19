@@ -21,18 +21,6 @@ export default function Awareness() {
                 ease: "bounce.in",
             })
 
-            const tl = gsap.timeline();
-            tl.to('.wrapper', 1, {x: -window.innerWidth});
-
-            ScrollTrigger.create({
-                animation: tl,
-                pin: true,
-                scrub: true,
-                trigger: ".wrapper",
-                start: "center center",
-                end: "+=10000"
-            })
-
             ScrollTrigger.create({
                 animation: load2,
                 trigger: ".heading2",
@@ -69,6 +57,11 @@ export default function Awareness() {
                 </section>
                 <section className="info-container divs">
                     <div className="gap"></div>
+                    <div className="deforestation-info-container">
+                        <div className="deforestation-header-container">
+                            <h1 className="deforestation-header"></h1>
+                        </div>
+                    </div>
                 </section>
             </div>
         </>
