@@ -5,6 +5,8 @@ import Navbar from './Navbar.jsx'
 import ExtinctAnimal from './ExtinctAnimal.jsx'
 import './index.css'
 import './lib/leaves.js'
+import Animals from './Animals.jsx'
+import Awareness from './Awareness.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -12,12 +14,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Navbar gap="false" time="8000"/>
     <Background/>
     */}
-    <Navbar gap="false" time="8000"/>
-    <Background/>
 
     {/* Wildlife = 
     <Navbar gap="true" time="0"/>
     <ExtinctAnimal/>
     */}
+    <Navbar />
+    <Awareness />
   </React.StrictMode>
 )

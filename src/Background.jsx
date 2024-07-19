@@ -60,7 +60,7 @@ export default function Background() {
     setTimeout(() => remove_title(), 5000);
 
     const gltfLoader = new GLTFLoader();
-    gltfLoader.load("/scene.gltf", (gltfScene) => {
+    gltfLoader.load("bg/scene.gltf", (gltfScene) => {
       bground.scene.add(gltfScene.scene);
     });
 
