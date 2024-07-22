@@ -8,8 +8,13 @@
     src: url('assets/fonts/thorin/ttf/thorin.ttf');
 }
 
+@font-face {
+    font-family: 'precious';
+    src: url('assets/fonts/precious/Precious.ttf');
+}
+
 html {
-    scroll-snap-type: both mandatory;
+    scroll-snap-type: y mandatory;
 }
 
 .divs {
@@ -37,7 +42,7 @@ html {
 .heading {
     color: #DAD3BE;
     font-family: 'thorin';
-    font-size: 10rem;
+    font-size: 10vw;
     font-weight: 100;
     line-height: 85vh;
     text-shadow: 0px 0px 10px #DAD3BE;
@@ -49,30 +54,151 @@ html {
     height: 85vh;
 }
 
-.info-container {
-    background-image: url('/leaves-bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .deforestation-info-container {
     width: 40vw;
-    height: 75vh;
-    margin-left: 5vw;
-    margin-top: 5vh;
+    height: 100vh;
     background-color: #B7B597;
+    position: relative;
+}
+
+.content-container {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.para1-container {
+    width: 20vw;
+    background-color: #6B8A7A;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px black;
+    color: #DAD3BE;
+    transition: 1s;
+    max-height: 25vh;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.para1-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #6B8A7A;
+}
+
+.image1-container {
+    height: 25vh;
+    display: flex;
+    border-radius: 20px;
+    border: 2px solid #254336;
+}
+
+.image1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px white;
+}
+
+.image1 {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.info-container{
+    position: relative;
+    display: flex;
 }
 
 .deforestation-header-container {
     text-align: center;
     color: #DAD3BE;
-    font-size: 3rem;
-    font-weight: lighter;
-    font-family: 'thorin';
+    font-size: 2.8vw;
+    font-family: 'precious';
     height: 15vh;
     line-height: 15vh;
-    border-radius: 10px 10px 0 0;
     background-color: #254336;
+}
+
+.deforestation-header {
+    padding-top: 1vh;
+}
+
+.deforestation-photo-container {
+    width: 60vw;
+    height: 100vh;
+}
+
+.tips-container {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.helpfulness-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.para1-container {
+    font-family: 'thorin';
+    font-weight: bold;
+}
+
+.tips {
+    background-color: #254336;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    margin-bottom: 1vh;
+    color: #DAD3BE;
+    font-family: 'thorin';
+    text-align: center;
+    padding: 10px;
+    width: 35vw;
+    transition: 0.2s;
+    font-weight: 100;
+}
+
+.tips:hover {
+    background-color: #DAD3BE;
+    color: #254336;
+    box-shadow: 0 0 10px #254336;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) {
+    .info-container {
+        flex-direction: column;
+    }
+
+    .deforestation-info-container {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .deforestation-photo-container {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .deforestation-header-container {
+        font-size: 4vh;
+    }
+
+    .para1-container {
+        width: 35vw;
+        font-size: 0.7rem;
+    }
+
+    .tips-container {
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tips {
+        font-size: 2.5vh;
+        width: 80%;
+        line-height: 100%;
+    }
 }

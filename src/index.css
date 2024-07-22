@@ -3,9 +3,9 @@ body {
   padding: 0;
   overflow-x: hidden;
   background-color: #DAD3BE;
-  background-image: url('assets/leaves-bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-image: url('leaves-bg.jpg'); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
 }
 
 ::-webkit-scrollbar {

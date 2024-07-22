@@ -34,7 +34,7 @@ import gsap from 'gsap';
 
   return (
     <>
-    <nav className='header-container'>
+    <nav className='header-container' style={{position: props.sticky === "sticky" ? "fixed" : "absolute"}}>
       <ul className={`sidebar ${sidebarVisible ? 'visible' : ''}`}>
         <li className="link" onClick={hideSidebar}>
           <a href="#">

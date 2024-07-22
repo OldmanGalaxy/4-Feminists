@@ -21,13 +21,15 @@ export default function Animals() {
         });
 
         gsap.to("#animal1", {
-            width: "50vw",
+            width: window.innerWidth <= 500 ? "100vw" : "50vw",
+            height: window.innerWidth <= 500 ? "50vh" : "100vh",
             duration: 2,
             delay: 1,
             onUpdate: () => frog.onWindowResize()
         });
         gsap.to(".canvas-container", {
-            width: "50vw",
+            width: window.innerWidth <= 500 ? "100vw" : "50vw",
+            height: window.innerWidth <= 500 ? "50vh" : "100vh",
             duration: 2,
             delay: 1,
             onUpdate: () => frog.onWindowResize()
@@ -35,7 +37,7 @@ export default function Animals() {
         gsap.to(frog.camera.position, {
             x: 0,
             y: 3,
-            z: 7.25,
+            z: window.innerWidth <= 500 ? 9 : 7.25,
             duration: 2,
             delay: 1,
             onComplete: () => {frog.controls.enableRotate = true}
