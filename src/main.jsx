@@ -18,7 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Navbar gap="true" time="0"/>
     <ExtinctAnimal/>
     */}
-    <Navbar sticky="no" gap="false"/>
-    <Awareness />
+    {/* <Navbar sticky="no" gap="false"/> */}
+    <Animals />
   </React.StrictMode>
 )

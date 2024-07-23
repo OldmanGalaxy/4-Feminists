@@ -1,9 +1,103 @@
-.animated {
-    display: flex;
+@font-face {
+    font-family: 'thorin';
+    src: url('assets/fonts/thorin/ttf/thorin.ttf');
 }
 
-@media only screen and (max-width: 500px) {
+.animated {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #254336;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    background-color: #254336;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.animal-header-container {
+    background-color: #DAD3BE;
+    width: 100%;
+    padding: 1vh 0;
+    font-family: 'thorin';
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    text-align: center;
+    color: #254336;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 70px);
+    overflow: hidden;
+}
+
+.content1-container, .content2-container {
+    display: flex;
+    width: 100%;
+    height: calc(50% - 7.5px);
+    margin-bottom: 15px;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.para1, .para2 {
+    color: #254336;
+    font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+    font-family: 'arial';
+    background-color: #DAD3BE;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    overflow-y: auto;
+    flex: 1;
+    font-size: 2.8vh;
+    transition: 0.3s;
+}
+
+.para1:hover, .para2:hover {
+    background-color: #6B8A7A;
+    color: #DAD3BE;
+}
+
+.para2 {
+    font-family: 'thorin';
+    font-weight: bolder;
+}
+
+.locations, .animal-image {
+    width: auto;
+    height: 100%;
+    max-width: 45%;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #B7B597;
+}
+
+@media screen and (min-width: 768px) {
     .animated {
-        flex-direction: column;
+        flex-direction: row;
+    }
+
+    .info-container {
+        width: 50%;
+        height: 100vh;
+    }
+
+    .content-wrapper {
+        height: calc(100% - 85px);
+    }
+
+    .content1-container, .content2-container {
+        height: calc(50% - 7.5px);
     }
 }

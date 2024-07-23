@@ -38,13 +38,13 @@ export default class Animal {
       antialias: true,
     });
     this.renderer.setSize(this.width, this.height);
-    this.renderer.setClearColor(0x254336, 1);
+    this.renderer.setClearColor(0x6b8a7a, 1);
     document.getElementsByClassName("canvas-container")[0].appendChild(this.renderer.domElement);
 
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
 
-    this.ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-    this.ambientLight.castShadow = true;
+    this.ambientLight = new THREE.AmbientLight(0xffffff, 1);
+    this.ambientLight.castShadow = false;
     this.scene.add(this.ambientLight);
 
     this.directionalLight = new THREE.DirectionalLight(0xffffff, 1);
