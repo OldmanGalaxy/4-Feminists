@@ -108,6 +108,14 @@ html {
     display: flex;
 }
 
+.slider-container {
+    height: 100vh;
+    width: 60vw;
+    background-image: url('tree_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .deforestation-header-container {
     text-align: center;
     color: #DAD3BE;

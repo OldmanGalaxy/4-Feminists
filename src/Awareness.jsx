@@ -75,6 +75,7 @@ export default function Awareness() {
             </div>
           </div>
         </div>
+        <div className="slider-container"></div>
       </section>
     </>
   );
