@@ -52,7 +52,7 @@
 
 .para1, .para2 {
     color: #254336;
-    font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+    font-size: clamp(0.5rem, 1.5vw, 0.9rem);
     font-family: 'arial';
     background-color: #DAD3BE;
     padding: 15px;
@@ -60,7 +60,6 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     overflow-y: auto;
     flex: 1;
-    font-size: 2.8vh;
     transition: 0.3s;
 }
 
@@ -83,7 +82,7 @@
     background-color: #B7B597;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 780px) {
     .animated {
         flex-direction: row;
     }
