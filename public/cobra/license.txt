@@ -1,0 +1,11 @@
+Model Information:
+* title:	Snake attack Animations (Multiple)
+* source:	https://sketchfab.com/3d-models/snake-attack-animations-multiple-83c4290cd4b648fd942d4bbc2280a3f6
+* author:	Imagigoo (https://sketchfab.com/Imagigoo)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Snake attack Animations (Multiple)" (https://sketchfab.com/3d-models/snake-attack-animations-multiple-83c4290cd4b648fd942d4bbc2280a3f6) by Imagigoo (https://sketchfab.com/Imagigoo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

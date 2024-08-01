@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './navbar.css';
 import logo from '/logo.png';
 import gsap from 'gsap';
+import { Outlet, Link } from "react-router-dom";
 
  function Navbar(props) {
   const [sidebarVisible, setSidebarVisible] = useState(false);
@@ -45,7 +46,7 @@ import gsap from 'gsap';
         </li>
         <li className="link"><a href="#">Home</a></li>
         <li className="link"><a href="#">Awareness</a></li>
-        <li className="link"><a href="#">Wildlife</a></li>
+        <li className="link"><a href="#"><Link to="/wildlife">Wildlife</Link></a></li>
         <li className="link"><a href="#">Blog</a></li>
         <li className="link"><a href="#">About</a></li>
         <li className="link"><a href="#">Contact</a></li>
@@ -84,6 +85,7 @@ import gsap from 'gsap';
       </ul>
     </nav>
     {props.gap === 'true' ? (<div className="space" style={{paddingTop: "15vh"}}></div>) : (<p></p>)}
+    <Outlet />
     </>
   );
 }

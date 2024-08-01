@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'thorin';
+    src: url('./assets/fonts/thorin/ttf/thorin.ttf');
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        top: -100vh;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.national-container {
+    background-image: url('/wildlife-bg.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gap {
+    height: 15vh;
+}
+
+.meet-container, .extinct-container, .animal-model-container {
+    position: relative;
+    top: 30%;
+    animation-name: fade-in;
+    background-color: #DAD3BE;
+    opacity: 0.5;
+    animation-duration: 2s;
+}
+
+.animal-model-container {
+    opacity: 1;
+}
+
+.meet, .extinct, .animal-model {
+    font-size: 8rem;
+    text-shadow: 0 0 10px #254336;
+    font-family: 'thorin';
+    color: #254336;
+    letter-spacing: 0.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .meet {
+        font-size: 2rem;
+    }
+}

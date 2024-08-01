@@ -38,7 +38,7 @@ export default class Animal {
       antialias: true,
     });
     this.renderer.setSize(this.width, this.height);
-    this.renderer.setClearColor(0x6b8a7a, 1);
+    this.renderer.setClearColor(0x6A8B7B, 1);
     document.getElementsByClassName("canvas-container")[0].appendChild(this.renderer.domElement);
 
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);

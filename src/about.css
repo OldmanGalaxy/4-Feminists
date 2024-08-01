@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #DAD3BE;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    cursor: default;
+}
+
+.header {
+    text-align: center;
+    padding: 5vh 0;
+    background-color: #80AF81;
+    color: #254336;
+    transition: background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.header:hover {
+    background-color: #254336;
+    color: #DAD3BE;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+    transform: rotate(45deg);
+    transition: transform 0.5s ease;
+}
+
+.header:hover::before {
+    transform: rotate(45deg) translate(50%, 50%);
+}
+
+.header h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out, float 3s ease-in-out infinite;
+    position: relative;
+}
+
+.header p {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    max-width: 800px;
+    margin: 0 auto;
+    animation: slideUp 1s ease-in-out, pulse 2s ease-in-out infinite;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature {
+    background-color: #254336;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature h3 {
+    color: #DAD3BE;
+}
+
+.feature p {
+    color: #DAD3BE;
+}
+
+.feature::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: 0.5s;
+}
+
+.feature:hover::before {
+    left: 100%;
+}
+
+.feature:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature i {
+    font-size: 3rem;
+    color: #DAD3BE;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover i {
+    transform: rotate(360deg) scale(1.1);
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #DAD3BE;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover h3::after {
+    transform: translateX(0);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@media (min-width: 768px) {
+    .features {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .features {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .feature {
+        padding: 20px;
+    }
+
+    .feature i {
+        font-size: 2.5rem;
+    }
+
+    .feature h3 {
+        font-size: 1.2rem;
+    }
+}
