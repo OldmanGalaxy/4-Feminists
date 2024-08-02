@@ -2,12 +2,11 @@ import React, {useState, useEffect} from 'react';
 import './navbar.css';
 import logo from '/logo.png';
 import gsap from 'gsap';
-import { Outlet, Link } from "react-router-dom";
 
  function Navbar(props) {
   const [sidebarVisible, setSidebarVisible] = useState(false);
   const [loaded, setLoaded] = useState(false);
-
+  
   useEffect(() => {
     if (!loaded)
       return;
@@ -44,27 +43,27 @@ import { Outlet, Link } from "react-router-dom";
             </svg>
           </a>
         </li>
-        <li className="link"><a href="#">Home</a></li>
-        <li className="link"><a href="#">Awareness</a></li>
-        <li className="link"><a href="#"><Link to="/wildlife">Wildlife</Link></a></li>
-        <li className="link"><a href="#">Blog</a></li>
-        <li className="link"><a href="#">About</a></li>
-        <li className="link"><a href="#">Contact</a></li>
+        <li className="link"><a href="/">Home</a></li>
+        <li className="link"><a href="/awareness">Awareness</a></li>
+        <li className="link"><a href="/wildlife">Wildlife</a></li>
+        <li className="link"><a href="/blog">Blog</a></li>
+        <li className="link"><a href="/about">About</a></li>
+        <li className="link"><a href="/contact">Contact</a></li>
       </ul>
       
       <ul>
-        <li className="link"><a href="#" className="hideOnMobile">Home</a></li>
-        <li className="link"><a href="#" className="hideOnMobile">Awareness</a></li>
-        <li className="link"><a href="#" className="hideOnMobile">Wildlife</a></li>
+        <li className="link"><a href="/" className="hideOnMobile">Home</a></li>
+        <li className="link"><a href="/awareness" className="hideOnMobile">Awareness</a></li>
+        <li className="link"><a href="/wildlife" className="hideOnMobile">Wildlife</a></li>
         <li>
           <div className="logo-container">
             <div className="logo-img-container">
-              <a href="" className="logo-link">
+              <a href="/" className="logo-link">
                 <img src={logo} className="logo" alt="logo" />
               </a>
             </div>
             <div className="title-container">
-              <a href="" className="title-link">
+              <a href="/" className="title-link">
                 <div className="title-link-container">
                   <p className="forest">Forest</p> <p className="focus">&nbsp;Focus</p>
                 </div>
@@ -72,9 +71,9 @@ import { Outlet, Link } from "react-router-dom";
             </div>
           </div> 
         </li>
-        <li className="link"><a href="#" className="hideOnMobile">Blog</a></li>
-        <li className="link"><a href="#" className="hideOnMobile">About</a></li>
-        <li className="link"><a href="#" className="hideOnMobile">Contact</a></li>
+        <li className="link"><a href="/blog" className="hideOnMobile">Blog</a></li>
+        <li className="link"><a href="/about" className="hideOnMobile">About</a></li>
+        <li className="link"><a href="/about" className="hideOnMobile">Contact</a></li>
         <li className="menu-button link" onClick={showSidebar}>
           <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
@@ -85,7 +84,6 @@ import { Outlet, Link } from "react-router-dom";
       </ul>
     </nav>
     {props.gap === 'true' ? (<div className="space" style={{paddingTop: "15vh"}}></div>) : (<p></p>)}
-    <Outlet />
     </>
   );
 }

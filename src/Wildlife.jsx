@@ -1,9 +1,8 @@
-import { useEffect } from "react";
 import './wildlife.css';
 import Marquee from "react-fast-marquee";
 import ExtinctAnimals from './ExtinctAnimals.jsx';
-import gsap from "gsap";
 import NationalAnimals from "./NationalAnimals.jsx";
+import DailyAnimal from './DailyAnimal.jsx';
 
 export default function Wildlife() {
   return (
@@ -25,6 +24,7 @@ export default function Wildlife() {
       <div className="animal-model-container">
         <Marquee className="animal-model"> Animal of the Day &nbsp;</Marquee>
       </div>
+      <DailyAnimal />
     </div>
     </>
   );
