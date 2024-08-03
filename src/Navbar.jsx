@@ -34,7 +34,7 @@ import gsap from 'gsap';
 
   return (
     <>
-    <nav className='header-container' style={{position: props.sticky === "sticky" ? "fixed" : "absolute"}}>
+    <nav className='header-container' style={{position: props.sticky === "true" ? "fixed" : "absolute"}}>
       <ul className={`sidebar ${sidebarVisible ? 'visible' : ''}`}>
         <li className="link" onClick={hideSidebar}>
           <a href="#">
@@ -83,7 +83,7 @@ import gsap from 'gsap';
         </li>
       </ul>
     </nav>
-    {props.gap === 'true' ? (<div className="space" style={{paddingTop: "15vh"}}></div>) : (<p></p>)}
+    {props.gap === 'true' ? (<div className="space" style={{paddingTop: "15vh", backgroundColor: "#254336"}}></div>) : (<p></p>)}
     </>
   );
 }

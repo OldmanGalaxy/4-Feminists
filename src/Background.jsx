@@ -213,7 +213,7 @@ export default function Background() {
               see what they looked like, and many other details about them.
               We intend to let you explore what animals have gone extinct, so have a crack!
             </p>
-            <a href="#" className="textbox-link">Go to Wildlife</a>
+            <a href="/wildlife" className="textbox-link">Go to Wildlife</a>
           </div>
           <div className="firefly-container">
             {[...Array(20)].map((_, i) => (
@@ -231,7 +231,7 @@ export default function Background() {
               Click on the link below to get to know each of us
               and more of what we do. The team here at Forest Focus are waiting for you. Click now!
             </p>
-            <a href="#" className="textbox-link">Meet Us!</a>
+            <a href="/about" className="textbox-link">Meet Us!</a>
           </div>
           <div className="firefly-container">
             {[...Array(20)].map((_, i) => (

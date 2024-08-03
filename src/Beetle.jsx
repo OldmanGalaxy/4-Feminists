@@ -29,20 +29,28 @@ export default function Elephant() {
             animalia.scene.add(gltfScene.scene);
         });
 
-        gsap.to(animalia.camera.position, {
-            x: -6.95,
-            y: 1.83,
-            z: isMobile ? 1.23 : 0.23,
-            duration: 2,
-            delay: 1,
-            onComplete: () => {animalia.controls.enableRotate = true}
-        });
-        gsap.to(animalia.controls.target, {
-            x: 0.3,
-            y: -0.05,
-            z: 0.02,
-            delay: 1,
-            duration: 2
+        ScrollTrigger.create({
+            trigger: ".animal-title",
+            start: "top 5%",
+            onEnter: () => {
+                gsap.to(animalia.camera.position, {
+                    x: -6.95,
+                    y: 1.83,
+                    z: isMobile ? 1.23 : 0.23,
+                    trigger: ".animal-title",
+                    duration: 2,
+                    delay: 1,
+                    onComplete: () => {animalia.controls.enableRotate = true}
+                });
+                gsap.to(animalia.controls.target, {
+                    x: 0.3,
+                    y: -0.05,
+                    z: 0.02,
+                    trigger: ".animal-title",
+                    delay: 1,
+                    duration: 2
+                });
+            }
         });
 
         return () => {

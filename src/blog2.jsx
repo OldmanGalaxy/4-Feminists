@@ -21,7 +21,7 @@ export default function Blog2() {
         <header>
         <h1>Sustainable Forest Management: Balancing Conservation and Utilization</h1>
     </header>
-        <nav id="table-of-contents">
+        <nav id="blog1-table-of-contents">
             <h2>Table of Contents</h2>
             <ul>
                 <li><a href="#introduction">Introduction</a></li>
@@ -37,21 +37,21 @@ export default function Blog2() {
         </nav>
     
         <main>
-            <section id="introduction">
+            <section id="blog1-introduction">
                 <h2>Introduction</h2>
                 <p>In an era of increasing environmental concerns and resource depletion, Sustainable Forest Management (SFM) has emerged as a critical approach to preserving our planet's forests while meeting human needs. This blog explores the concept of SFM, its principles, benefits, challenges, and its role in shaping the future of our global ecosystems.</p>
             </section>
     
-            <section id="what-is-sfm">
+            <section id="blog1-what-is-sfm">
                 <h2>What is Sustainable Forest Management?</h2>
                 <p>Sustainable Forest Management is the environmentally appropriate, socially beneficial, and economically viable management of forests for present and future generations. It aims to balance the various demands placed on forests while preserving their ecological functions.</p>
-                <div class="image-container">
+                <div class="blog1-image-container">
                     <img src="/blog2_img1.jpg" alt="Sustainable forest management in action" />
-                    <p class="image-caption">Sustainable forest management practices in a mixed-use forest</p>
+                    <p class="blog1-image-caption">Sustainable forest management practices in a mixed-use forest</p>
                 </div>
             </section>
     
-            <section id="principles">
+            <section id="blog1-principles">
                 <h2>Key Principles of SFM</h2>
                 <p>Sustainable Forest Management is guided by several core principles:</p>
                 <ul>
@@ -64,7 +64,7 @@ export default function Blog2() {
                 </ul>
             </section>
     
-            <section id="benefits">
+            <section id="blog1-benefits">
                 <h2>Benefits of Sustainable Forest Management</h2>
                 <h3>Environmental Benefits</h3>
                 <ul>
@@ -91,7 +91,7 @@ export default function Blog2() {
                 </ul>
             </section>
     
-            <section id="challenges">
+            <section id="blog1-challenges">
                 <h2>Challenges in Implementing SFM</h2>
                 <p>Despite its benefits, implementing Sustainable Forest Management faces several challenges:</p>
                 <ul>
@@ -107,7 +107,7 @@ export default function Blog2() {
                 </blockquote>
             </section>
     
-            <section id="best-practices">
+            <section id="blog1-best-practices">
                 <h2>Best Practices and Techniques in SFM</h2>
                 <ul>
                     <li><strong>Selective Logging:</strong> Harvesting specific trees to maintain forest structure and biodiversity.</li>
@@ -118,7 +118,7 @@ export default function Blog2() {
                 </ul>
             </section>
     
-            <section id="case-studies">
+            <section id="blog1-case-studies">
                 <h2>Case Studies and Success Stories</h2>
                 <h3>The Amazon Fund, Brazil</h3>
                 <p>The Amazon Fund has successfully reduced deforestation rates in the Brazilian Amazon by supporting projects that promote sustainable forest use and conservation. Since its inception in 2008, it has helped decrease deforestation by over 80% in certain areas.</p>
@@ -126,13 +126,13 @@ export default function Blog2() {
                 <h3>Community Forestry in Nepal</h3>
                 <p>Nepal's community forestry program has become a global model for sustainable forest management. By empowering local communities to manage forest resources, the program has improved forest cover and biodiversity while enhancing rural livelihoods.</p>
                 
-                <div class="image-container">
+                <div class="blog1-image-container">
                     <img src="/blog2_img2.png" alt="Community forestry in Nepal" />
                     <p class="image-caption">Community members participating in forest management activities in Nepal</p>
                 </div>
             </section>
     
-            <section id="future">
+            <section id="blog1-future">
                 <h2>The Future of Sustainable Forest Management</h2>
                 <p>The future of SFM is shaped by emerging trends and technologies:</p>
                 <ul>
@@ -144,13 +144,13 @@ export default function Blog2() {
                 </ul>
             </section>
     
-            <section id="conclusion">
+            <section id="blog1-conclusion">
                 <h2>Conclusion</h2>
                 <p>Sustainable Forest Management represents a holistic approach to preserving our forests while meeting societal needs. By balancing conservation with utilization, SFM offers a path towards a future where forests continue to thrive and provide essential services to humanity and the planet. As we face the challenges of climate change and biodiversity loss, embracing and improving SFM practices will be crucial for the health of our planet and the well-being of future generations.</p>
             </section>
         </main>
     
-        <button id="back-to-top" title="Back to Top">↑ Top</button>
+        <button id="blog1-back-to-top" title="Back to Top">↑ Top</button>
         </>
     );
 }

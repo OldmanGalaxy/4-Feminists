@@ -2,31 +2,42 @@ import {useEffect} from 'react';
 import './blogs.css';
 
 export default function Blog1() {
-
     useEffect(() => {
-        const backToTopButton = document.getElementById("back-to-top");
+        const backToTopButton = document.getElementById("blog1-back-to-top");
 
-        window.addEventListener("scroll", () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.style.display = "block";
-            } else {
-                backToTopButton.style.display = "none";
-            }
-        });
-        backToTopButton.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
+        if (backToTopButton) {
+            const handleScroll = () => {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.style.display = "block";
+                } else {
+                    backToTopButton.style.display = "none";
+                }
+            };
+
+            const scrollToTop = () => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            };
+
+            window.addEventListener("scroll", handleScroll);
+            backToTopButton.addEventListener("click", scrollToTop);
+
+            return () => {
+                window.removeEventListener("scroll", handleScroll);
+                backToTopButton.removeEventListener("click", scrollToTop);
+            };
+        }
     }, []);
 
     return (
         <>
-        <header>
-            <h1>Green Cities: The Rise of Urban Forestry and Its Impact on Modern Life</h1>
-        </header>
+        <div className="blog1-container">
+            <header className="blog1-header">
+                <h1 className="blog1-title">Green Cities: The Rise of Urban Forestry and Its Impact on Modern Life</h1>
+            </header>
     
-        <div id="table-of-contents">
-            <h2>Table of Contents</h2>
-            <ul>
+            <div id="blog1-table-of-contents">
+                <h2>Table of Contents</h2>
+                <ul>
                 <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#what-is-urban-forestry">What is Urban Forestry?</a></li>
                 <li><a href="#benefits">Benefits of Urban Forestry</a></li>
@@ -37,18 +48,18 @@ export default function Blog1() {
             </ul>
         </div>
     
-        <section id="introduction">
-            <h2>Introduction</h2>
-            <p>In an era of rapid urbanization, the concept of urban forestry has emerged as a beacon of hope for creating sustainable, livable cities. As concrete jungles expand, the need for green spaces becomes increasingly crucial. This blog post delves into the world of urban forestry, exploring its significance, benefits, challenges, and future prospects in shaping our urban landscapes.</p>
-        </section>
+        <section id="blog1-introduction">
+                <h2>Introduction</h2>
+                <p>In an era of rapid urbanization, the concept of urban forestry has emerged as a beacon of hope for creating sustainable, livable cities. As concrete jungles expand, the need for green spaces becomes increasingly crucial. This blog post delves into the world of urban forestry, exploring its significance, benefits, challenges, and future prospects in shaping our urban landscapes.</p>
+            </section>
     
-        <section id="what-is-urban-forestry">
+        <section id="blog1-what-is-urban-forestry">
             <h2>What is Urban Forestry?</h2>
             <p>Urban forestry is the careful planning, planting, protection, and care of trees, forests, greenway connections and other natural resources in and around urban areas. It encompasses not just individual trees along streets or in parks, but entire ecosystems within city limits.</p>
             
-            <div class="image-container">
+            <div class="blog1-image-container">
                 <img src="/blog1_img1.jpg" alt="Urban forest in a city" />
-                <p class="image-caption">A thriving urban forest integrated into a cityscape</p>
+                <p class="blog1-image-caption">A thriving urban forest integrated into a cityscape</p>
             </div>
             
             <p>Key components of urban forestry include:</p>
@@ -61,7 +72,7 @@ export default function Blog1() {
             </ul>
         </section>
     
-        <section id="benefits">
+        <section id="blog1-benefits">
             <h2>Benefits of Urban Forestry</h2>
             <p>The integration of forests into urban planning brings numerous advantages:</p>
             
@@ -89,13 +100,13 @@ export default function Blog1() {
                 <li>Job creation in forestry and related industries</li>
             </ul>
             
-            <div class="image-container">
+            <div class="blog1-image-container">
                 <img src="/blog1_img2.jpg" alt="People enjoying an urban park" />
-                <p class="image-caption">Urban forests provide spaces for recreation and community engagement</p>
+                <p class="blog1-image-caption">Urban forests provide spaces for recreation and community engagement</p>
             </div>
         </section>
     
-        <section id="challenges">
+        <section id="blog1-challenges">
             <h2>Challenges in Urban Forestry</h2>
             <p>Despite its many benefits, urban forestry faces several obstacles:</p>
             <ul>
@@ -112,7 +123,7 @@ export default function Blog1() {
             </blockquote>
         </section>
     
-        <section id="case-studies">
+        <section id="blog1-case-studies">
             <h2>Case Studies and Examples</h2>
             <h3>New York City's Million Trees Initiative</h3>
             <p>Launched in 2007, this program aimed to plant and care for one million new trees across New York City's five boroughs. The initiative was completed in 2015, two years ahead of schedule, significantly increasing the city's urban forest.</p>
@@ -120,16 +131,16 @@ export default function Blog1() {
             <h3>Singapore: The Garden City</h3>
             <p>Singapore has transformed itself from a concrete jungle to a garden city through extensive urban forestry programs. The city-state boasts over 300 km of green corridors and aims to have 85% of residents living within 400 meters of a park by 2030.</p>
             
-            <div class="image-container">
+            <div class="blog1-image-container">
                 <img src="/blog1_img3.jpg" alt="Singapore's Gardens by the Bay" />
-                <p class="image-caption">Singapore's Gardens by the Bay, an example of innovative urban forestry</p>
+                <p class="blog1-image-caption">Singapore's Gardens by the Bay, an example of innovative urban forestry</p>
             </div>
             
             <h3>Melbourne's Urban Forest Strategy</h3>
             <p>Melbourne, Australia, developed a comprehensive urban forest strategy to increase canopy cover, improve water quality, and create an urban forest resilient to climate change. The city aims to increase canopy cover from 22% to 40% by 2040.</p>
         </section>
     
-        <section id="future">
+        <section id="blog1-future">
             <h2>Future of Urban Forestry</h2>
             <p>The future of urban forestry looks promising, with several emerging trends:</p>
             <ul>
@@ -143,11 +154,12 @@ export default function Blog1() {
             <p>As cities continue to grow, urban forestry will play an increasingly vital role in creating sustainable, resilient, and livable urban environments for future generations.</p>
         </section>
     
-        <section id="conclusion">
+        <section id="blog1-conclusion">
             <h2>Conclusion</h2>
             <p>Urban forestry represents a powerful tool in our quest for sustainable urban development. By integrating nature into our cities, we can create healthier, more resilient, and more livable urban spaces. As we face the challenges of climate change and rapid urbanization, the importance of urban forests will only continue to grow. It's time for city planners, policymakers, and citizens alike to embrace the green revolution and work together to foster thriving urban forests for the benefit of all.</p>
         </section>
-        <button id="back-to-top" title="Back to Top">↑ Top</button>
+        <button id="blog1-back-to-top" title="Back to Top">↑ Top</button>
+        </div>
         </>
     );
 }

@@ -25,7 +25,7 @@ export default function Blog4() {
         <h1>Technology in Forestry: Revolutionizing Forest Management and Conservation</h1>
     </header>
 
-    <div id="table-of-contents">
+    <div id="blog1-table-of-contents">
         <h2>Table of Contents</h2>
         <ul>
             <li><a href="#introduction">Introduction</a></li>
@@ -40,12 +40,12 @@ export default function Blog4() {
         </ul>
     </div>
 
-    <section id="introduction">
+    <section id="blog1-introduction">
         <h2>Introduction</h2>
         <p>In recent years, the field of forestry has undergone a technological revolution. From satellite imagery to artificial intelligence, cutting-edge technologies are transforming how we manage, monitor, and conserve our forests. This blog post explores the various technologies making waves in forestry and their impact on sustainable forest management and conservation efforts.</p>
     </section>
 
-    <section id="remote-sensing">
+    <section id="blog1-remote-sensing">
         <h2>Remote Sensing and Satellite Technology</h2>
         <p>Remote sensing and satellite technology have become indispensable tools in modern forestry practices.</p>
         
@@ -59,13 +59,13 @@ export default function Blog4() {
         
         <p>Platforms like Landsat, Sentinel, and MODIS provide regular, high-resolution imagery of forest areas worldwide, enabling near real-time monitoring of forest ecosystems.</p>
         
-        <div class="image-container">
+        <div class="blog1-image-container">
             <img src="/blog4_img1.png" alt="Satellite image of forest cover" />
-            <p class="image-caption">Satellite imagery showing forest cover changes over time</p>
+            <p class="blog1-image-caption">Satellite imagery showing forest cover changes over time</p>
         </div>
     </section>
 
-    <section id="drones">
+    <section id="blog1-drones">
         <h2>Drones in Forestry</h2>
         <p>Unmanned Aerial Vehicles (UAVs) or drones have revolutionized data collection in forestry, offering high-resolution, on-demand aerial imagery and 3D mapping capabilities.</p>
         
@@ -78,13 +78,13 @@ export default function Blog4() {
         </ul>
         
         <p>Drones equipped with LiDAR (Light Detection and Ranging) sensors can create detailed 3D models of forest structures, providing invaluable data for forest managers and researchers.</p>
-        <div class="image-container">
+        <div class="blog1-image-container">
             <img src="/blog4_img2.png" alt="IoT sensors in a forest" />
-            <p class="image-caption">Drones equipped with LiDAR sensors</p>
+            <p class="blog1-image-caption">Drones equipped with LiDAR sensors</p>
         </div>
     </section>
 
-    <section id="ai-ml">
+    <section id="blog1-ai-ml">
         <h2>Artificial Intelligence and Machine Learning</h2>
         <p>AI and machine learning algorithms are enhancing our ability to analyze vast amounts of forestry data quickly and accurately.</p>
         
@@ -101,7 +101,7 @@ export default function Blog4() {
         </blockquote>
     </section>
 
-    <section id="iot">
+    <section id="blog1-iot">
         <h2>Internet of Things (IoT) in Forest Monitoring</h2>
         <p>IoT devices are creating smart forests by providing real-time data on various environmental parameters.</p>
         
@@ -115,13 +115,13 @@ export default function Blog4() {
         
         <p>Networks of sensors can transmit data on temperature, humidity, air quality, and other factors, enabling proactive forest management and conservation strategies.</p>
         
-        <div class="image-container">
+        <div class="blog1-image-container">
             <img src="/blog4-img3.jpg" alt="IoT sensors in a forest" />
-            <p class="image-caption">IoT sensors deployed in a forest for real-time environmental monitoring</p>
+            <p class="blog1-image-caption">IoT sensors deployed in a forest for real-time environmental monitoring</p>
         </div>
     </section>
 
-    <section id="mobile-apps">
+    <section id="blog1-mobile-apps">
         <h2>Mobile Applications for Forest Management</h2>
         <p>Mobile apps are putting powerful forestry tools in the hands of field workers, researchers, and even citizen scientists.</p>
         
@@ -136,7 +136,7 @@ export default function Blog4() {
         <p>These apps facilitate data collection, improve accuracy, and enable real-time information sharing among forestry professionals and enthusiasts.</p>
     </section>
 
-    <section id="challenges">
+    <section id="blog1-challenges">
         <h2>Challenges and Limitations</h2>
         <p>While technology offers numerous benefits to forestry, it also presents some challenges:</p>
         
@@ -151,7 +151,7 @@ export default function Blog4() {
         <p>Addressing these challenges is crucial for the widespread adoption and effective use of technology in forestry.</p>
     </section>
 
-    <section id="future">
+    <section id="blog1-future">
         <h2>The Future of Forestry Technology</h2>
         <p>As technology continues to advance, we can expect to see:</p>
         
@@ -166,13 +166,13 @@ export default function Blog4() {
         <p>These emerging technologies have the potential to further revolutionize forest management and conservation practices.</p>
     </section>
 
-    <section id="conclusion">
+    <section id="blog1-conclusion">
         <h2>Conclusion</h2>
         <p>Technology is playing an increasingly vital role in modern forestry, offering new tools and methods for sustainable forest management and conservation. From satellites in space to sensors on the ground, these innovations are helping us better understand, monitor, and protect our forest ecosystems.</p>
         <p>As we face global challenges like climate change and biodiversity loss, the integration of technology in forestry will be crucial in developing effective strategies for forest preservation and sustainable use. By embracing these technological advancements while being mindful of their limitations, we can work towards a future where forests thrive alongside human development.</p>
     </section>
 
-    <button id="back-to-top" title="Back to Top">↑ Top</button>
+    <button id="blog1-back-to-top" title="Back to Top">↑ Top</button>
 </>
     );
 }

@@ -15,11 +15,9 @@ export default function Wildlife() {
           </div>
       </section>
       <NationalAnimals />
-      <section className="extinct-animals-container">
-          <div className="extinct-container">
-            <Marquee className="extinct"> Explore These Extinct Animals &nbsp;</Marquee>
-          </div>
-      </section>
+        <div className="extinct-container">
+          <Marquee className="extinct"> Explore These Extinct Animals &nbsp;</Marquee>
+        </div>
       <ExtinctAnimals />
       <div className="animal-model-container">
         <Marquee className="animal-model"> Animal of the Day &nbsp;</Marquee>

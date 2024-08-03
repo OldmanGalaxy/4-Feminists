@@ -1,0 +1,336 @@
+@font-face {
+    font-family: "thorin";
+    src: url("fonts/thorin/ttf/thorin.ttf");
+}
+
+@font-face {
+    font-family: "precious";
+    src: url("fonts/precious/Precious.ttf");
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #254336;
+    padding: 40px;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    font-family: 'thorin';
+}
+
+.left-part, .middle-part, .right-part {
+    flex: 1;
+    z-index: 2;
+    position: relative;
+}
+
+.footer-logo {
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    height: 20vh;
+    transition: 0.3s;
+}
+
+.footer-logo:hover {
+    transform: scale(1.1);
+}
+
+.footer-title-container {
+    display: flex;
+}
+
+.footer-logo-container {
+    font-family: "thorin", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-title-link-container {
+    display: flex;
+    font-size: 32px;
+    transition: 0.3s;
+}
+
+.footer-title-link-container:hover {
+    transform: scale(1.05);
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-forest {
+    color: #6B8A7A;
+    font-family: "precious", sans-serif;
+    font-weight: 900;
+}
+
+.footer-focus {
+    color: #DAD3BE;
+    font-family: "precious", sans-serif;
+    font-weight: 900;
+}
+
+.quick-links-title, .contact-us-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.quick-links-title::after, .contact-us-title::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #8FD694;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.quick-links-title:hover::after, .contact-us-title:hover::after {
+    width: 100%;
+}
+
+.quick-links-title:hover, .contact-us-title:hover {
+    color: #A5D6A7;
+    transform: translateY(-2px);
+}
+
+.quick-links {
+    list-style-type: none;
+}
+
+.quick-links li {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.quick-links li:hover {
+    transform: translateX(10px);
+}
+
+.quick-links a {
+    position: relative;
+    padding-bottom: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.quick-links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #B5E3B6;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.quick-links a:hover {
+    color: #B5E3B6;
+}
+
+.quick-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.right-part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateX(5px);
+    color: #C5E1A5;
+}
+
+.contact-item i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #8FD694;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: #A5D6A7;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    z-index: 0;
+}
+
+.social-icon:hover::before {
+    width: 150%;
+    height: 150%;
+    top: -25%;
+    left: -25%;
+}
+
+.social-icon:hover {
+    color: #254336;
+    transform: rotate(360deg);
+}
+
+.social-icon i {
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover i {
+    transform: scale(1.2);
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #8FD694, #A5D6A7, #B5E3B6, #DCEDC8);
+    background-size: 300% 100%;
+    animation: gradientFlow 15s ease infinite;
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.quick-links-title, .contact-us-title {
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@media (max-width: 800px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .left-part {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-logo {
+        height: 15vh;
+        margin-right: 15px;
+    }
+
+    .footer-title-link-container {
+        font-size: 24px;
+    }
+
+    .middle-part {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .quick-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .quick-links li {
+        margin: 0 10px 10px;
+    }
+
+    .right-part {
+        width: 100%;
+        align-items: center;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .social-icon {
+        margin: 0 10px;
+    }
+}

@@ -23,7 +23,7 @@ export default function Blog5() {
     <header>
         <h1>Into the Wild: 24 Hours with a Forest Guardian</h1>
     </header>
-    <div id="table-of-contents">
+    <div id="blog1-table-of-contents">
         <h2>Table of Contents</h2>
         <ul>
             <li><a href="#introduction">Introduction</a></li>
@@ -39,12 +39,12 @@ export default function Blog5() {
         </ul>
     </div>
     
-    <section id="introduction">
+    <section id="blog1-introduction">
         <h2>Introduction</h2>
         <p>Forest rangers are the unsung heroes of our natural world, dedicating their lives to protecting and preserving our wilderness areas. Their role extends far beyond mere observation; they are guardians, educators, conservationists, and sometimes even lifesavers. This blog post offers a glimpse into the daily life of a forest ranger, highlighting the diverse responsibilities and challenges they face in their mission to safeguard our precious forest ecosystems.</p>
     </section>
     
-    <section id="early-morning">
+    <section id="blog1-early-morning">
         <h2>Early Morning: Rise and Prepare</h2>
         <p>The day of a forest ranger often begins before dawn. As the first rays of sunlight filter through the canopy, our ranger, let's call her Sarah, is already up and preparing for the day ahead.</p>
         
@@ -55,15 +55,15 @@ export default function Blog5() {
             <li>Pack supplies for the day: water, food, maps</li>
         </ul>
         
-        <div class="image-container">
+        <div class="blog1-image-container">
             <img src="/blog5_img1.jpg" alt="Forest ranger preparing for the day" />
-            <p class="image-caption">A forest ranger gearing up for a day of protecting the wilderness</p>
+            <p class="blog1-image-caption">A forest ranger gearing up for a day of protecting the wilderness</p>
         </div>
         
         <p>Sarah knows that being well-prepared is crucial. The forest is unpredictable, and she must be ready for any situation that may arise during her patrol.</p>
     </section>
     
-    <section id="morning-patrol">
+    <section id="blog1-morning-patrol">
         <h2>Morning Patrol: Eyes on the Forest</h2>
         <p>With the sun now rising, Sarah begins her morning patrol, a critical part of her day that involves surveying the forest for any signs of disturbance or potential hazards.</p>
         
@@ -82,7 +82,7 @@ export default function Blog5() {
         <p>During her patrol, Sarah uses her trained eye to spot even the smallest signs of ecosystem changes or disturbances. She records her observations, which will be crucial for ongoing forest management and conservation efforts.</p>
     </section>
     
-    <section id="midday">
+    <section id="blog1-midday">
         <h2>Midday: Education and Interaction</h2>
         <p>As the day progresses, Sarah's role shifts from observer to educator as she interacts with forest visitors.</p>
         
@@ -94,15 +94,15 @@ export default function Blog5() {
             <li>Enforce park rules and regulations</li>
         </ul>
         
-        <div class="image-container">
+        <div class="blog1-image-container">
             <img src="/blog5_img2.jpg" alt="Forest ranger educating visitors" />
-            <p class="image-caption">A forest ranger sharing knowledge with curious visitors</p>
+            <p class="blog1-image-caption">A forest ranger sharing knowledge with curious visitors</p>
         </div>
         
         <p>Education is a vital part of a forest ranger's duties. By fostering an appreciation for nature, Sarah helps create a new generation of conservation-minded individuals who will help protect the forest for years to come.</p>
     </section>
     
-    <section id="afternoon">
+    <section id="blog1-afternoon">
         <h2>Afternoon: Conservation in Action</h2>
         <p>The afternoon often involves hands-on conservation work, where Sarah puts her knowledge and skills into practice to maintain and improve the forest ecosystem.</p>
         
@@ -117,7 +117,7 @@ export default function Blog5() {
         <p>This active conservation work is crucial for maintaining the health and biodiversity of the forest. It's physically demanding but immensely satisfying for Sarah, as she can see the direct impact of her efforts on the ecosystem.</p>
     </section>
     
-    <section id="evening">
+    <section id="blog1-evening">
         <h2>Evening: Vigilance and Reflection</h2>
         <p>As daylight fades, Sarah's vigilance remains high. The changing conditions bring new challenges and responsibilities.</p>
         
@@ -132,7 +132,7 @@ export default function Blog5() {
         <p>The day concludes with Sarah updating her logs and preparing reports on the day's activities. She reflects on the day's experiences, always learning and adapting to better serve the forest and its inhabitants.</p>
     </section>
     
-    <section id="challenges">
+    <section id="blog1-challenges">
         <h2>Challenges Faced by Forest Rangers</h2>
         <p>The life of a forest ranger is not without its challenges. Some of the main obstacles they face include:</p>
         <ul>
@@ -149,7 +149,7 @@ export default function Blog5() {
         </blockquote>
     </section>
     
-    <section id="technology">
+    <section id="blog1-technology">
         <h2>Technology in Modern Forest Management</h2>
         <p>While traditional skills remain crucial, modern forest rangers also employ various technologies to enhance their effectiveness:</p>
         <ul>
@@ -160,15 +160,15 @@ export default function Blog5() {
             <li>Satellite imagery for large-scale forest health assessment</li>
         </ul>
         
-        <div class="image-container">
+        <div class="blog1-image-container">
             <img src="/blog5_img3.png" alt="Forest ranger using technology" />
-            <p class="image-caption">A forest ranger utilizing modern technology for conservation efforts</p>
+            <p class="blog1-image-caption">A forest ranger utilizing modern technology for conservation efforts</p>
         </div>
         
         <p>These technological tools allow rangers like Sarah to cover more ground, gather more accurate data, and make more informed decisions in their forest management efforts.</p>
     </section>
     
-    <section id="career">
+    <section id="blog1-career">
         <h2>Becoming a Forest Ranger</h2>
         <p>For those inspired by Sarah's story and considering a career as a forest ranger, here are some key steps and requirements:</p>
         <ul>
@@ -182,13 +182,13 @@ export default function Blog5() {
         <p>While the path can be challenging, the rewards of a career in forest rangering are immeasurable for those passionate about nature and conservation.</p>
     </section>
     
-    <section id="conclusion">
+    <section id="blog1-conclusion">
         <h2>Conclusion</h2>
         <p>A day in the life of a forest ranger is diverse, challenging, and deeply rewarding. From dawn patrols to nighttime vigilance, rangers like Sarah play a crucial role in protecting our wilderness areas. They are the frontline defenders of our forests, balancing the needs of the ecosystem with those of human visitors.</p>
         <p>As we face growing environmental challenges, the role of forest rangers becomes increasingly vital. They not only protect our natural heritage but also inspire and educate others to become stewards of the environment. The dedication and passion of these unsung heroes ensure that our forests will continue to thrive for generations to come.</p>
     </section>
     
-    <button id="back-to-top" title="Back to Top">↑ Top</button>
+    <button id="blog1-back-to-top" title="Back to Top">↑ Top</button>
 </>
 );
 }

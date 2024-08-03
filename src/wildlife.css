@@ -10,7 +10,7 @@
     }
 
     100% {
-        opacity: 1;
+        opacity: 0.5;
     }
 }
 
@@ -31,7 +31,16 @@
     height: 15vh;
 }
 
-.meet-container, .extinct-container, .animal-model-container {
+.extinct-container, .animal-model-container {
+    position: relative;
+    top: 30%;
+    animation-name: fade-in;
+    background-color: #DAD3BE;
+    opacity: 1;
+    animation-duration: 2s;
+}
+
+.meet-container {
     position: relative;
     top: 30%;
     animation-name: fade-in;

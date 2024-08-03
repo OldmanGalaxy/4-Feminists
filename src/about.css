@@ -1,25 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+@font-face {
+    font-family: 'thorin';
+    src: url('/assets/fonts/thorin/ttf/thorin.ttf');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #DAD3BE;
-    overflow-x: hidden;
-}
-
 .container {
-    width: 90%;
-    max-width: 1200px;
+    width: 100vw;
     margin: 0 auto;
-    padding: 20px;
     cursor: default;
+    font-family: 'thorin';
 }
 
 .header {
@@ -62,12 +58,13 @@ body {
 
 .header p {
     font-size: clamp(1rem, 3vw, 1.5rem);
+    font-weight: bold;
     max-width: 800px;
     margin: 0 auto;
     animation: slideUp 1s ease-in-out, pulse 2s ease-in-out infinite;
 }
 
-.features {
+.features, .mission-items, .impact-stats, .team-members {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
@@ -77,26 +74,28 @@ body {
     margin-right: auto;
 }
 
-.feature {
+.feature, .mission-item, .stat, .team-member {
     background-color: #254336;
     padding: 30px;
+    margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    backdrop-filter: blur(5px);
 }
 
-.feature h3 {
+.feature h3, .mission-item h3, .stat h3, .team-member h3 {
     color: #DAD3BE;
 }
 
-.feature p {
+.feature p, .mission-item p, .stat p, .team-member p {
     color: #DAD3BE;
 }
 
-.feature::before {
+.feature::before, .mission-item::before, .stat::before, .team-member::before {
     content: '';
     position: absolute;
     top: 0;
@@ -107,34 +106,34 @@ body {
     transition: 0.5s;
 }
 
-.feature:hover::before {
+.feature:hover::before, .mission-item:hover::before, .stat:hover::before, .team-member:hover::before {
     left: 100%;
 }
 
-.feature:hover {
+.feature:hover, .mission-item:hover, .stat:hover, .team-member:hover {
     transform: translateY(-5px) scale(1.03);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-.feature i {
+.feature i, .mission-item i {
     font-size: 3rem;
     color: #DAD3BE;
     margin-bottom: 20px;
     transition: transform 0.3s ease;
 }
 
-.feature:hover i {
+.feature:hover i, .mission-item:hover i {
     transform: rotate(360deg) scale(1.1);
 }
 
-.feature h3 {
+.feature h3, .mission-item h3, .stat h3, .team-member h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     position: relative;
     overflow: hidden;
 }
 
-.feature h3::after {
+.feature h3::after, .mission-item h3::after, .stat h3::after, .team-member h3::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -146,8 +145,61 @@ body {
     transition: transform 0.3s ease;
 }
 
-.feature:hover h3::after {
+.feature:hover h3::after, .mission-item:hover h3::after, .stat:hover h3::after, .team-member:hover h3::after {
     transform: translateX(0);
+}
+
+.mission, .impact, .team {
+    padding: 50px 0;
+    background-image: url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.mission::before, .impact::before, .team::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(37, 67, 54, 0.7);
+}
+
+.mission .container, .impact .container, .team .container {
+    position: relative;
+    z-index: 1;
+}
+
+.mission h2, .impact h2, .team h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #DAD3BE;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.impact-stats {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #DAD3BE;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+    transform: scale(1.05);
 }
 
 @keyframes fadeIn {
@@ -171,27 +223,27 @@ body {
 }
 
 @media (min-width: 768px) {
-    .features {
+    .features, .mission-items, .impact-stats, .team-members {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (min-width: 1200px) {
-    .features {
+    .features, .mission-items, .impact-stats, .team-members {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 600px) {
-    .feature {
+    .feature, .mission-item, .stat, .team-member {
         padding: 20px;
     }
 
-    .feature i {
+    .feature i, .mission-item i {
         font-size: 2.5rem;
     }
 
-    .feature h3 {
+    .feature h3, .mission-item h3, .stat h3, .team-member h3 {
         font-size: 1.2rem;
     }
 }

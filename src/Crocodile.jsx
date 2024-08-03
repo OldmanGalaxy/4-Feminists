@@ -28,22 +28,30 @@ export default function Crocodile() {
             animalia.scene.add(gltfScene.scene);
         });
 
-        gsap.to(animalia.camera.position, {
-            x: 0,
-            y: 3,
-            z: isMobile ? 9 : 7.25,
-            duration: 2,
-            delay: 1,
-            onComplete: () => {animalia.controls.enableRotate = true}
+        ScrollTrigger.create({
+            trigger: ".animal-title",
+            start: "top 5%",
+            onEnter: () => {
+                gsap.to(animalia.camera.position, {
+                    x: 0,
+                    y: 3,
+                    z: isMobile ? 9 : 7.25,
+                    trigger: ".animal-title",
+                    duration: 2,
+                    delay: 1,
+                    onComplete: () => {animalia.controls.enableRotate = true}
+                });
+                gsap.to(animalia.controls.target, {
+                    x: 0.08,
+                    y: 0.16,
+                    z: 0.12,
+                    trigger: ".animal-title",
+                    delay: 1,
+                    duration: 2
+                });
+            }
         });
-        gsap.to(animalia.controls.target, {
-            x: 0.08,
-            y: 0.16,
-            z: 0.12,
-            delay: 1,
-            duration: 2
-        });
-
+        
         return () => {
             window.removeEventListener('resize', handleResize);
         };

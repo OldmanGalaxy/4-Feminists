@@ -1,11 +1,13 @@
 import * as three from 'three';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
 import {useEffect, useState} from 'react';
 import './animals.css';
 import { GLTFLoader } from 'three/examples/jsm/Addons.js';
 import Animal from "./lib/Animal.js";
 
 export default function Elephant() {
+    gsap.registerPlugin(ScrollTrigger);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     useEffect(() => {
@@ -28,20 +30,26 @@ export default function Elephant() {
             animalia.scene.add(gltfScene.scene);
         });
 
-        gsap.to(animalia.camera.position, {
-            x: 0.59,
-            y: 0.92,
-            z: isMobile ? 10.27 : 9.27,
-            duration: 2,
-            delay: 1,
-            onComplete: () => {animalia.controls.enableRotate = true}
-        });
-        gsap.to(animalia.controls.target, {
-            x: -0.21,
-            y: 0.35,
-            z: -0.37,
-            delay: 1,
-            duration: 2
+        ScrollTrigger.create({
+            trigger: ".animal-title",
+            start: "top 5%",
+            onEnter: () => {
+                gsap.to(animalia.camera.position, {
+                    x: 0.59,
+                    y: 0.92,
+                    z: isMobile ? 10.27 : 9.27,
+                    duration: 2,
+                    delay: 1,
+                    onComplete: () => { animalia.controls.enableRotate = true }
+                });
+                gsap.to(animalia.controls.target, {
+                    x: -0.21,
+                    y: 0.35,
+                    z: -0.37,
+                    duration: 2,
+                    delay: 1
+                });
+            }
         });
 
         return () => {

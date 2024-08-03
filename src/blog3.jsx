@@ -25,7 +25,7 @@ const backToTopButton = document.getElementById("back-to-top");
         <h1>Reforestation and Afforestation Projects: Successes and Challenges</h1>
     </header>
 
-    <div id="table-of-contents">
+    <div id="blog1-table-of-contents">
         <h2>Table of Contents</h2>
         <ul>
             <li><a href="#introduction">Introduction</a></li>
@@ -38,12 +38,12 @@ const backToTopButton = document.getElementById("back-to-top");
         </ul>
     </div>
 
-    <section id="introduction">
+    <section id="blog1-introduction">
         <h2>Introduction</h2>
         <p>As our planet grapples with the effects of climate change and deforestation, reforestation and afforestation projects have emerged as powerful tools in the fight against environmental degradation. These initiatives not only help to restore lost forest cover but also play a crucial role in carbon sequestration, biodiversity conservation, and sustainable development. In this blog post, we'll explore the successes and challenges of these vital projects, shedding light on their importance in shaping a greener future.</p>
     </section>
 
-    <section id="definitions">
+    <section id="blog1-definitions">
         <h2>Reforestation vs. Afforestation: Definitions</h2>
         <p>Before delving into the successes and challenges, it's important to understand the distinction between reforestation and afforestation:</p>
         <ul>
@@ -52,13 +52,13 @@ const backToTopButton = document.getElementById("back-to-top");
         </ul>
         <p>Both approaches contribute to increasing forest cover, but they present unique opportunities and challenges.</p>
         
-        <div class="image-container">
+        <div class="blog1-image-container">
             <img src="/blog3_img1.webp" alt="Comparison of reforestation and afforestation" />
             <p class="image-caption">Visual representation of reforestation and afforestation processes</p>
         </div>
     </section>
 
-    <section id="successes">
+    <section id="blog1-successes">
         <h2>Success Stories</h2>
         <h3>The Great Green Wall Initiative</h3>
         <p>Spanning across the width of Africa, the Great Green Wall is an ambitious project aimed at combating desertification in the Sahel region. While initially conceived as a continuous band of trees, the project has evolved into a mosaic of sustainable land management practices.</p>
@@ -76,9 +76,9 @@ const backToTopButton = document.getElementById("back-to-top");
             <li>Enhanced biodiversity and carbon sequestration</li>
         </ul>
 
-        <div class="image-container">
+        <div class="blog1-image-container">
             <img src="/blog3_img2.jpg" alt="Before and after images of a reforestation project" />
-            <p class="image-caption">Before and after images of a successful reforestation project in China</p>
+            <p class="blog1-image-caption">Before and after images of a successful reforestation project in China</p>
         </div>
 
         <h3>Costa Rica's Forest Recovery</h3>
@@ -90,7 +90,7 @@ const backToTopButton = document.getElementById("back-to-top");
         </ul>
     </section>
 
-    <section id="challenges">
+    <section id="blog1-challenges">
         <h2>Challenges Faced</h2>
         <p>Despite these successes, reforestation and afforestation projects face numerous challenges:</p>
 
@@ -114,7 +114,7 @@ const backToTopButton = document.getElementById("back-to-top");
         </blockquote>
     </section>
 
-    <section id="best-practices">
+    <section id="blog1-best-practices">
         <h2>Best Practices and Innovations</h2>
         <p>To address these challenges, several best practices and innovations have emerged:</p>
 
@@ -130,16 +130,16 @@ const backToTopButton = document.getElementById("back-to-top");
         <h3>4. Community-Based Forest Management</h3>
         <p>Involving local communities in planning, implementation, and maintenance ensures long-term project success and provides sustainable livelihoods.</p>
 
-        <div class="image-container">
+        <div class="blog1-image-container">
             <img src="/blog3_img3.jpg" alt="Community members participating in a reforestation project" />
-            <p class="image-caption">Local community members actively participating in a reforestation project</p>
+            <p class="blog1-image-caption">Local community members actively participating in a reforestation project</p>
         </div>
 
         <h3>5. Agroforestry Systems</h3>
         <p>Integrating trees with crops or livestock can provide economic benefits while restoring forest cover and improving soil health.</p>
     </section>
 
-    <section id="future">
+    <section id="blog1-future">
         <h2>The Future of Reforestation and Afforestation</h2>
         <p>As we look to the future, several trends are shaping the landscape of reforestation and afforestation:</p>
         <ul>
@@ -151,13 +151,13 @@ const backToTopButton = document.getElementById("back-to-top");
         </ul>
     </section>
 
-    <section id="conclusion">
+    <section id="blog1-conclusion">
         <h2>Conclusion</h2>
         <p>Reforestation and afforestation projects have demonstrated remarkable successes in restoring ecosystems, sequestering carbon, and improving livelihoods. While challenges persist, innovative approaches and growing global commitment offer hope for scaling up these efforts. As we continue to grapple with climate change and biodiversity loss, these projects will play an increasingly vital role in creating a sustainable and resilient future for our planet.</p>
         <p>By learning from past successes and challenges, and by embracing new technologies and community-centered approaches, we can unlock the full potential of reforestation and afforestation in healing our planet and securing a greener future for generations to come.</p>
     </section>
 
-    <button id="back-to-top" title="Back to Top">↑ Top</button>
+    <button id="blog1-back-to-top" title="Back to Top">↑ Top</button>
     </>
     );
 }
