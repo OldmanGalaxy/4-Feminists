@@ -61,7 +61,7 @@
 }
 
 .section-title {
-    margin-top: 2.5rem;
+    margin-top: 5vh;
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     text-align: center;
@@ -356,5 +356,9 @@ a, button, .blog-card {
   @media (max-width: 400px){
     .logo-container{
         flex-direction: column;
+    }
+
+    .section-title {
+        margin-top: 1vw;
     }
   } 
