@@ -36,7 +36,7 @@ const Footer = () => {
         <div className="contact-info">
           <div className="contact-item">
             <i className="fas fa-phone"></i>
-            <span>+1 (555) 123-4567</span>
+            <span>+91 9579389062</span>
           </div>
           <div className="contact-item">
             <i className="fas fa-envelope"></i>
@@ -44,14 +44,14 @@ const Footer = () => {
           </div>
           <div className="contact-item">
             <i className="fas fa-map-marker-alt"></i>
-            <span>123 Green Street, Forest City, FC 12345</span>
+            <span>ABVB Room No. 336, SVNIT, Piplod, Surat, Gujarat, India</span>
           </div>
         </div>
         <div className="social-links">
-          <a href="#" className="social-icon"><i className="fab fa-facebook-f"></i></a>
-          <a href="#" className="social-icon"><i className="fab fa-twitter"></i></a>
-          <a href="#" className="social-icon"><i className="fab fa-instagram"></i></a>
-          <a href="#" className="social-icon"><i className="fab fa-linkedin-in"></i></a>
+          <a href="#" className="social-icon"><i className="fa fa-facebook-f"></i></a>
+          <a href="#" className="social-icon"><i className="fa fa-twitter"></i></a>
+          <a href="#" className="social-icon"><i className="fa fa-instagram"></i></a>
+          <a href="#" className="social-icon"><i className="fa fa-linkedin"></i></a>
         </div>
       </div>
     </div>

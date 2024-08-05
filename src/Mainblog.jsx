@@ -105,7 +105,7 @@ const Mainblog = () => {
               <p>Experience a day in the life of a forest ranger, from dawn patrols to nighttime vigilance, safeguarding nature's treasures and protecting wildlife from poachers and...</p>
               <div className="card-meta">
                 <div className="author-info">
-                  <img src="" alt="Author" className="author-avatar" />
+                  <img src="/john_smith.png" alt="Author" className="author-avatar" />
                   <span className="author-name">Parmar Nirmeet</span>
                 </div>
               </div>
@@ -130,7 +130,7 @@ const Mainblog = () => {
               <p>Embark on a thrilling journey through the Amazon, exploring canopy walks and sustainable eco-lodges...</p>
               <div className="card-meta">
                 <div className="author-info">
-                  <img src="https://source.unsplash.com/30x30/?portrait" alt="Author" className="author-avatar" />
+                  <img src="/john_smith.png" alt="Author" className="author-avatar" />
                   <span className="author-name">Parmar Nirmeet</span>
                 </div>
               </div>
@@ -155,7 +155,7 @@ const Mainblog = () => {
               <p>Discover how sustainable forest management practices are preserving ecosystems while meeting human needs...</p>
               <div className="card-meta">
                 <div className="author-info">
-                  <img src="https://source.unsplash.com/30x30/?portrait" alt="Author" className="author-avatar" />
+                  <img src="/john_smith.png" alt="Author" className="author-avatar" />
                   <span className="author-name">Parmar Nirmeet</span>
                 </div>
               </div>
@@ -180,7 +180,7 @@ const Mainblog = () => {
               <p>Explore the impact of urban forestry on modern life and sustainable city development...</p>
               <div className="card-meta">
                 <div className="author-info">
-                  <img src="https://source.unsplash.com/30x30/?portrait" alt="Author" className="author-avatar" />
+                  <img src="/john_smith.png" alt="Author" className="author-avatar" />
                   <span className="author-name">Parmar Nirmeet</span>
                 </div>
               </div>
@@ -205,7 +205,7 @@ const Mainblog = () => {
               <p>Learn about the triumphs and obstacles in global efforts to restore and expand forest cover...</p>
               <div className="card-meta">
                 <div className="author-info">
-                  <img src="https://source.unsplash.com/30x30/?portrait" alt="Author" className="author-avatar" />
+                  <img src="/john_smith.png" alt="Author" className="author-avatar" />
                   <span className="author-name">Parmar Nirmeet</span>
                 </div>
               </div>
@@ -230,7 +230,7 @@ const Mainblog = () => {
               <p>Explore how cutting-edge technologies are transforming forest conservation and management practices...</p>
               <div className="card-meta">
                 <div className="author-info">
-                  <img src="https://source.unsplash.com/30x30/?portrait" alt="Author" className="author-avatar" />
+                  <img src="/john_smith.png" alt="Author" className="author-avatar" />
                   <span className="author-name">Parmar Nirmeet</span>
                 </div>
               </div>

@@ -15,7 +15,7 @@
     align-items: flex-start;
     background-color: #254336;
     padding: 40px;
-    color: #ffffff;
+    color: #DAD3BE;
     position: relative;
     overflow: hidden;
     font-family: 'thorin';
@@ -25,6 +25,10 @@
     flex: 1;
     z-index: 2;
     position: relative;
+}
+
+.quick-links-title {
+    font-family: 'thorin';
 }
 
 .footer-logo {
@@ -77,7 +81,6 @@
 }
 
 .quick-links-title, .contact-us-title {
-    font-family: 'Playfair Display', serif;
     font-size: 24px;
     margin-bottom: 20px;
     position: relative;
@@ -122,7 +125,6 @@
 .quick-links a {
     position: relative;
     padding-bottom: 2px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     letter-spacing: 0.5px;
     transition: color 0.3s ease;
@@ -154,6 +156,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.contact-us-title {
+    margin-left: 1rem;
+    font-family: 'thorin';
 }
 
 .contact-info {
