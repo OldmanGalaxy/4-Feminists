@@ -26,8 +26,9 @@ export default class Island {
       1,
       1000
     );
-    this.camera.position.z = 35;
-    this.camera.position.y = -2;
+    this.camera.position.x = -2.65;
+    this.camera.position.y = -0.96;
+    this.camera.position.z = 32.78;
 
     const canvas = document.getElementById(this.canvasId);
     this.renderer = new THREE.WebGLRenderer({
@@ -39,6 +40,7 @@ export default class Island {
     document.getElementsByClassName("canvas-container")[0].appendChild(this.renderer.domElement);
 
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
+    this.controls.target = new THREE.Vector3(0, 0, -8);
 
     this.ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
     this.ambientLight.castShadow = true;

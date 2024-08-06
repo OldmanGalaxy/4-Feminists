@@ -9,9 +9,10 @@ import Textbox from "./Textbox.jsx";
 export default function Background() {
   const sceneRef = useRef(null);
   const scrollRef = useRef(0);
+  const bground = new Island("island");
 
   useEffect(() => {
-    const bground = new Island("island");
+    
     document.body.style.overflow = "hidden";
     bground.initialize();
     bground.animate();
@@ -19,8 +20,26 @@ export default function Background() {
     sceneRef.current = bground;
 
     function load_bg() {
-      gsap.to(bground.controls.target, { x: 0, y: 0, z: -8, duration: 3 });
-      gsap.to(bground.camera.position, { x: 0, y: 120, z: -5, duration: 3 });
+      gsap.to(bground.controls.target, {
+        x: 0,
+        y: 0,
+        z: -8,
+        duration: 3,
+      });
+      gsap.to(bground.camera.position, {
+        x: -11.27,
+        y: 6.75,
+        z: 43.16,
+        duration: 2,
+        onComplete: () => {
+          gsap.to(bground.camera.position, {
+            x: 0,
+            y: 120,
+            z: -5,
+            duration: 2
+          })
+        }
+      });
       gsap.to(".text-box-container", {
         height: 0,
         zIndex: -100,
@@ -174,6 +193,11 @@ export default function Background() {
     };
   }, []);
 
+  function locations() {
+    console.log(bground.camera.position);
+    console.log(bground.controls.target);
+  }
+
   return (
     <>
       <div className="div-model" style={{ height: "100vh", overflow: "hidden" }}>
@@ -186,6 +210,7 @@ export default function Background() {
           <canvas id="island"></canvas>
         </div>
       </div>
+      {/* <button className="testing" onClick={locations} style={{position: "absolute", top: 0}}>Click Me</button> */}
       <div className="first" style={{ position: "absolute", top: "100%", opacity: "0", left: "5%", zIndex: 0 }}>
         <Textbox>
           <div className="textbox-content">
