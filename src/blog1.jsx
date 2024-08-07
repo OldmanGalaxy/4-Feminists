@@ -2,32 +2,6 @@ import {useEffect} from 'react';
 import './blogs.css';
 
 export default function Blog1() {
-    useEffect(() => {
-        const backToTopButton = document.getElementById("blog1-back-to-top");
-
-        if (backToTopButton) {
-            const handleScroll = () => {
-                if (window.pageYOffset > 300) {
-                    backToTopButton.style.display = "block";
-                } else {
-                    backToTopButton.style.display = "none";
-                }
-            };
-
-            const scrollToTop = () => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-            };
-
-            window.addEventListener("scroll", handleScroll);
-            backToTopButton.addEventListener("click", scrollToTop);
-
-            return () => {
-                window.removeEventListener("scroll", handleScroll);
-                backToTopButton.removeEventListener("click", scrollToTop);
-            };
-        }
-    }, []);
-
     return (
         <>
         <div className="blog1-container">
@@ -158,7 +132,6 @@ export default function Blog1() {
             <h2>Conclusion</h2>
             <p>Urban forestry represents a powerful tool in our quest for sustainable urban development. By integrating nature into our cities, we can create healthier, more resilient, and more livable urban spaces. As we face the challenges of climate change and rapid urbanization, the importance of urban forests will only continue to grow. It's time for city planners, policymakers, and citizens alike to embrace the green revolution and work together to foster thriving urban forests for the benefit of all.</p>
         </section>
-        <button id="blog1-back-to-top" title="Back to Top">↑ Top</button>
         </div>
         </>
     );

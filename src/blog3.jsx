@@ -2,29 +2,12 @@ import {useEffect} from 'react';
 import './blogs.css';
 
 export default function Blog3() {
-
-    useEffect(() => {
-const backToTopButton = document.getElementById("back-to-top");
-
-        window.addEventListener("scroll", () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.style.display = "block";
-            } else {
-                backToTopButton.style.display = "none";
-            }
-        });
-
-        backToTopButton.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-    }, []);
-
     return (
         <>
-    <header>
-        <h1>Reforestation and Afforestation Projects: Successes and Challenges</h1>
-    </header>
-
+    <div className="blog1-container">
+            <header className="blog1-header">
+                <h1 className="blog1-title">Green Cities: The Rise of Urban Forestry and Its Impact on Modern Life</h1>
+            </header>
     <div id="blog1-table-of-contents">
         <h2>Table of Contents</h2>
         <ul>
@@ -157,7 +140,7 @@ const backToTopButton = document.getElementById("back-to-top");
         <p>By learning from past successes and challenges, and by embracing new technologies and community-centered approaches, we can unlock the full potential of reforestation and afforestation in healing our planet and securing a greener future for generations to come.</p>
     </section>
 
-    <button id="blog1-back-to-top" title="Back to Top">↑ Top</button>
+    </div>
     </>
     );
 }

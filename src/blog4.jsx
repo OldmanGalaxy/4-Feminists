@@ -2,28 +2,12 @@ import {useEffect} from 'react';
 import './blogs.css';
 
 export default function Blog4() {
-
-    useEffect(() => {
-        const backToTopButton = document.getElementById("back-to-top");
-
-        window.addEventListener("scroll", () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.style.display = "block";
-            } else {
-                backToTopButton.style.display = "none";
-            }
-        });
-
-        backToTopButton.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-    }, []);
-
     return (
         <>
-    <header>
-        <h1>Technology in Forestry: Revolutionizing Forest Management and Conservation</h1>
-    </header>
+    <div className="blog1-container">
+            <header className="blog1-header">
+                <h1 className="blog1-title">Green Cities: The Rise of Urban Forestry and Its Impact on Modern Life</h1>
+            </header>
 
     <div id="blog1-table-of-contents">
         <h2>Table of Contents</h2>
@@ -172,7 +156,7 @@ export default function Blog4() {
         <p>As we face global challenges like climate change and biodiversity loss, the integration of technology in forestry will be crucial in developing effective strategies for forest preservation and sustainable use. By embracing these technological advancements while being mindful of their limitations, we can work towards a future where forests thrive alongside human development.</p>
     </section>
 
-    <button id="blog1-back-to-top" title="Back to Top">↑ Top</button>
+    </div>
 </>
     );
 }

@@ -2,27 +2,12 @@ import {useEffect} from 'react';
 import './blogs.css';
 
 export default function Blog5() {
-
-    useEffect(() => {
-        const backToTopButton = document.getElementById("back-to-top");
-
-        window.addEventListener("scroll", () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.style.display = "block";
-            } else {
-                backToTopButton.style.display = "none";
-            }
-        });
-        backToTopButton.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-    }, []);
-
     return (
         <>
-    <header>
-        <h1>Into the Wild: 24 Hours with a Forest Guardian</h1>
-    </header>
+    <div className="blog1-container">
+            <header className="blog1-header">
+                <h1 className="blog1-title">Green Cities: The Rise of Urban Forestry and Its Impact on Modern Life</h1>
+            </header>
     <div id="blog1-table-of-contents">
         <h2>Table of Contents</h2>
         <ul>
@@ -188,7 +173,7 @@ export default function Blog5() {
         <p>As we face growing environmental challenges, the role of forest rangers becomes increasingly vital. They not only protect our natural heritage but also inspire and educate others to become stewards of the environment. The dedication and passion of these unsung heroes ensure that our forests will continue to thrive for generations to come.</p>
     </section>
     
-    <button id="blog1-back-to-top" title="Back to Top">↑ Top</button>
+    </div>
 </>
 );
 }

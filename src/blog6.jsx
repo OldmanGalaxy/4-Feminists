@@ -2,29 +2,13 @@ import {useEffect} from 'react';
 import './blogs.css';
 
 export default function Blog6() {
-
-    useEffect(() => {
-        const backToTopButton = document.getElementById("back-to-top");
-
-        window.addEventListener("scroll", () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.style.display = "block";
-            } else {
-                backToTopButton.style.display = "none";
-            }
-        });
-        backToTopButton.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-    }, []);
-
     return (
         <>
-    <header>
-        <h1>Rainforest Adventures: Navigating the Amazon's Canopy Walks and Eco-Lodges</h1>
-    </header>
-
-    <div id="table-of-contents">
+    <div className="blog1-container">
+            <header className="blog1-header">
+                <h1 className="blog1-title">Green Cities: The Rise of Urban Forestry and Its Impact on Modern Life</h1>
+            </header>
+    <div id="blog1-table-of-contents">
         <h2>Table of Contents</h2>
         <ul>
             <li><a href="#introduction">Introduction</a></li>
@@ -59,9 +43,9 @@ export default function Blog6() {
         
         <p>The Amazon plays a crucial role in regulating the Earth's climate and is a hotspot for biodiversity. However, it faces significant threats from deforestation, climate change, and unsustainable development.</p>
         
-        <div class="image-container">
+        <div class="blog1-image-container">
             <img src="/blog6_img1.jpg" alt="Aerial view of the Amazon rainforest" />
-            <p class="image-caption">The vast expanse of the Amazon rainforest from above</p>
+            <p class="blog1-image-caption">The vast expanse of the Amazon rainforest from above</p>
         </div>
     </section>
     
@@ -109,9 +93,9 @@ export default function Blog6() {
             <li><strong>Sacha Lodge, Ecuador:</strong> Features a butterfly farm, canopy walkway, and observation tower, all designed with minimal environmental impact.</li>
         </ol>
         
-        <div class="image-container">
+        <div class="blog1-image-container">
             <img src="/blog6_img2.jpg" alt="An eco-lodge nestled in the Amazon rainforest" />
-            <p class="image-caption">Sustainable luxury at an Amazon eco-lodge</p>
+            <p class="blog1-image-caption">Sustainable luxury at an Amazon eco-lodge</p>
         </div>
     </section>
     
@@ -248,9 +232,9 @@ export default function Blog6() {
             <li>Respect wildlife and local communities when taking photos</li>
         </ul>
         
-        <div class="image-container">
+        <div class="blog1-image-container">
             <img src="/blog6_img3.jpg" alt="Photographer capturing the Amazon rainforest" />
-            <p class="image-caption">Capturing the magic of the Amazon through photography</p>
+            <p class="blog1-image-caption">Capturing the magic of the Amazon through photography</p>
         </div>
     </section>
     
@@ -260,7 +244,7 @@ export default function Blog6() {
         <p>The Amazon is more than just a destination; it's a vital part of our planet's health and biodiversity. By choosing to visit responsibly, you're not only creating unforgettable memories but also contributing to the conservation of one of Earth's most precious resources. So pack your bags, bring your sense of wonder, and prepare for an adventure that will change the way you see the world.</p>
     </section>
     
-    <button id="back-to-top" title="Back to Top">↑ Top</button>
+    </div>
 </>
     );
 }

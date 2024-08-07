@@ -2,26 +2,13 @@ import {useEffect} from 'react';
 import './blogs.css';
 
 export default function Blog2() {
-    useEffect(() => {
-        const backToTopButton = document.getElementById("back-to-top");
-        window.addEventListener("scroll", () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.style.display = "block";
-            } else {
-                backToTopButton.style.display = "none";
-            }
-        });
-        backToTopButton.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-    }, []);
-
     return (
         <>
-        <header>
-        <h1>Sustainable Forest Management: Balancing Conservation and Utilization</h1>
-    </header>
-        <nav id="blog1-table-of-contents">
+        <div className="blog1-container">
+            <header className="blog1-header">
+                <h1 className="blog1-title">Green Cities: The Rise of Urban Forestry and Its Impact on Modern Life</h1>
+            </header>
+        <div id="blog1-table-of-contents">
             <h2>Table of Contents</h2>
             <ul>
                 <li><a href="#introduction">Introduction</a></li>
@@ -34,7 +21,7 @@ export default function Blog2() {
                 <li><a href="#future">The Future of Sustainable Forest Management</a></li>
                 <li><a href="#conclusion">Conclusion</a></li>
             </ul>
-        </nav>
+        </div>
     
         <main>
             <section id="blog1-introduction">
@@ -150,7 +137,7 @@ export default function Blog2() {
             </section>
         </main>
     
-        <button id="blog1-back-to-top" title="Back to Top">↑ Top</button>
+        </div>
         </>
     );
 }
