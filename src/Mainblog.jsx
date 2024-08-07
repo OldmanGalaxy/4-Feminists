@@ -111,9 +111,9 @@ const Mainblog = () => {
               </div>
               <a href="/blog1" className="read-more">Read More</a>
               <div className="social-share">
-                <button className="share-btn" aria-label="Share on Facebook"><i className="fab fa-facebook-f"></i></button>
-                <button className="share-btn" aria-label="Share on Twitter"><i className="fab fa-twitter"></i></button>
-                <button className="share-btn" aria-label="Share on LinkedIn"><i className="fab fa-linkedin-in"></i></button>
+                <button className="share-btn" aria-label="Share on Facebook"><i className="fa fa-facebook"></i></button>
+                <button className="share-btn" aria-label="Share on Twitter"><i className="fa fa-twitter"></i></button>
+                <button className="share-btn" aria-label="Share on LinkedIn"><i className="fa fa-linkedin"></i></button>
               </div>
             </div>
           </article>
@@ -136,9 +136,9 @@ const Mainblog = () => {
               </div>
               <a href="/blog2" className="read-more">Read More</a>
               <div className="social-share">
-                <button className="share-btn" aria-label="Share on Facebook"><i className="fab fa-facebook-f"></i></button>
-                <button className="share-btn" aria-label="Share on Twitter"><i className="fab fa-twitter"></i></button>
-                <button className="share-btn" aria-label="Share on LinkedIn"><i className="fab fa-linkedin-in"></i></button>
+              <button className="share-btn" aria-label="Share on Facebook"><i className="fa fa-facebook"></i></button>
+                <button className="share-btn" aria-label="Share on Twitter"><i className="fa fa-twitter"></i></button>
+                <button className="share-btn" aria-label="Share on LinkedIn"><i className="fa fa-linkedin"></i></button>
               </div>
             </div>
           </article>
@@ -161,9 +161,9 @@ const Mainblog = () => {
               </div>
               <a href="/blog3" className="read-more">Read More</a>
               <div className="social-share">
-                <button className="share-btn" aria-label="Share on Facebook"><i className="fab fa-facebook-f"></i></button>
-                <button className="share-btn" aria-label="Share on Twitter"><i className="fab fa-twitter"></i></button>
-                <button className="share-btn" aria-label="Share on LinkedIn"><i className="fab fa-linkedin-in"></i></button>
+              <button className="share-btn" aria-label="Share on Facebook"><i className="fa fa-facebook"></i></button>
+                <button className="share-btn" aria-label="Share on Twitter"><i className="fa fa-twitter"></i></button>
+                <button className="share-btn" aria-label="Share on LinkedIn"><i className="fa fa-linkedin"></i></button>
               </div>
             </div>
           </article>
@@ -186,9 +186,9 @@ const Mainblog = () => {
               </div>
               <a href="/blog4" className="read-more">Read More</a>
               <div className="social-share">
-                <button className="share-btn" aria-label="Share on Facebook"><i className="fab fa-facebook-f"></i></button>
-                <button className="share-btn" aria-label="Share on Twitter"><i className="fab fa-twitter"></i></button>
-                <button className="share-btn" aria-label="Share on LinkedIn"><i className="fab fa-linkedin-in"></i></button>
+              <button className="share-btn" aria-label="Share on Facebook"><i className="fa fa-facebook"></i></button>
+                <button className="share-btn" aria-label="Share on Twitter"><i className="fa fa-twitter"></i></button>
+                <button className="share-btn" aria-label="Share on LinkedIn"><i className="fa fa-linkedin"></i></button>
               </div>
             </div>
           </article>
@@ -211,9 +211,9 @@ const Mainblog = () => {
               </div>
               <a href="/blog5" className="read-more">Read More</a>
               <div className="social-share">
-                <button className="share-btn" aria-label="Share on Facebook"><i className="fab fa-facebook-f"></i></button>
-                <button className="share-btn" aria-label="Share on Twitter"><i className="fab fa-twitter"></i></button>
-                <button className="share-btn" aria-label="Share on LinkedIn"><i className="fab fa-linkedin-in"></i></button>
+              <button className="share-btn" aria-label="Share on Facebook"><i className="fa fa-facebook"></i></button>
+                <button className="share-btn" aria-label="Share on Twitter"><i className="fa fa-twitter"></i></button>
+                <button className="share-btn" aria-label="Share on LinkedIn"><i className="fa fa-linkedin"></i></button>
               </div>
             </div>
           </article>
@@ -236,9 +236,9 @@ const Mainblog = () => {
               </div>
               <a href="/blog6" className="read-more">Read More</a>
               <div className="social-share">
-                <button className="share-btn" aria-label="Share on Facebook"><i className="fab fa-facebook-f"></i></button>
-                <button className="share-btn" aria-label="Share on Twitter"><i className="fab fa-twitter"></i></button>
-                <button className="share-btn" aria-label="Share on LinkedIn"><i className="fab fa-linkedin-in"></i></button>
+              <button className="share-btn" aria-label="Share on Facebook"><i className="fa fa-facebook"></i></button>
+                <button className="share-btn" aria-label="Share on Twitter"><i className="fa fa-twitter"></i></button>
+                <button className="share-btn" aria-label="Share on LinkedIn"><i className="fa fa-linkedin"></i></button>
               </div>
             </div>
           </article>

@@ -33,18 +33,18 @@ const Footer = () => {
       </div>
       <div className="right-part">
         <h3 className="contact-us-title">Contact Us</h3>
-        <div className="contact-info">
-          <div className="contact-item">
+        <div className="contact-info-container">
+          <div className="contact-item-container">
             <i className="fas fa-phone"></i>
             <span>+91 9579389062</span>
           </div>
-          <div className="contact-item">
+          <div className="contact-item-container">
             <i className="fas fa-envelope"></i>
             <span>info@forestfocus.com</span>
           </div>
-          <div className="contact-item">
+          <div className="contact-item-container">
             <i className="fas fa-map-marker-alt"></i>
-            <span>ABVB Room No. 336, SVNIT, Piplod, Surat, Gujarat, India</span>
+            <span>ABVB Room No. 613, SVNIT, Piplod, Surat, Gujarat, India</span>
           </div>
         </div>
         <div className="social-links">

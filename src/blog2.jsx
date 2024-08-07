@@ -45,9 +45,9 @@ export default function Blog2() {
             <section id="blog1-what-is-sfm">
                 <h2>What is Sustainable Forest Management?</h2>
                 <p>Sustainable Forest Management is the environmentally appropriate, socially beneficial, and economically viable management of forests for present and future generations. It aims to balance the various demands placed on forests while preserving their ecological functions.</p>
-                <div class="blog1-image-container">
+                <div className="blog1-image-container">
                     <img src="/blog2_img1.jpg" alt="Sustainable forest management in action" />
-                    <p class="blog1-image-caption">Sustainable forest management practices in a mixed-use forest</p>
+                    <p className="blog1-image-caption">Sustainable forest management practices in a mixed-use forest</p>
                 </div>
             </section>
     
@@ -126,9 +126,9 @@ export default function Blog2() {
                 <h3>Community Forestry in Nepal</h3>
                 <p>Nepal's community forestry program has become a global model for sustainable forest management. By empowering local communities to manage forest resources, the program has improved forest cover and biodiversity while enhancing rural livelihoods.</p>
                 
-                <div class="blog1-image-container">
+                <div className="blog1-image-container">
                     <img src="/blog2_img2.png" alt="Community forestry in Nepal" />
-                    <p class="image-caption">Community members participating in forest management activities in Nepal</p>
+                    <p className="image-caption">Community members participating in forest management activities in Nepal</p>
                 </div>
             </section>
     

@@ -73,7 +73,7 @@ import gsap from 'gsap';
         </li>
         <li className="link"><a href="/blog" className="hideOnMobile">Blog</a></li>
         <li className="link"><a href="/about" className="hideOnMobile">About</a></li>
-        <li className="link"><a href="/about" className="hideOnMobile">Contact</a></li>
+        <li className="link"><a href="/contact" className="hideOnMobile">Contact</a></li>
         <li className="menu-button link" onClick={showSidebar}>
           <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">

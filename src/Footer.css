@@ -163,23 +163,23 @@
     font-family: 'thorin';
 }
 
-.contact-info {
+.contact-info-container {
     margin-bottom: 20px;
 }
 
-.contact-item {
+.contact-item-container {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.contact-item:hover {
+.contact-item-container:hover {
     transform: translateX(5px);
     color: #C5E1A5;
 }
 
-.contact-item i {
+.contact-item-container i {
     font-size: 20px;
     margin-right: 10px;
     color: #8FD694;

@@ -59,7 +59,7 @@ export default function Background() {
     function load_title() {
       gsap.to(".char", {
         opacity: 1,
-        y: window.innerHeight / 2 - window.innerWidth * 0.16,
+        y: window.innerHeight / 2 - window.innerWidth * 0.11,
         stagger: 0.05,
         duration: 0.1,
       });

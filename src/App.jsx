@@ -11,13 +11,15 @@ import Blog4 from './blog4.jsx';
 import Blog5 from './blog5.jsx';
 import Blog6 from './blog6.jsx';
 import Footer from './Footer.jsx';
+import Contact from './Contact.jsx';
+import BlogCard from './BlogCard.jsx';
 
 export default function App() {
     const router = createBrowserRouter([
         {
             path: "/",
             element: <>
-                <Navbar time="8000" gap="no" sticky="false" />
+                <Navbar time="9000" gap="no" sticky="false" />
                 <Background />
             </>
         },
@@ -90,6 +92,14 @@ export default function App() {
             element: <>
                 <Navbar sticky="true" gap="true"/>
                 <Blog6 />
+                <Footer />
+            </>
+        },
+        {
+            path: "/contact",
+            element: <>
+                <Navbar sticky="true" gap="true" />
+                <Contact />
                 <Footer />
             </>
         }

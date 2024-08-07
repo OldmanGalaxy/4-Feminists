@@ -1,0 +1,103 @@
+.hover-card {
+    max-width: 250px;
+    /* background-color: rgba(255, 255, 255, 0.25); */
+    background-color: #25433640;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    backdrop-filter: blur(4px);
+    position: relative;
+}
+
+.hover-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    background-color: rgba(37, 67, 54, 0.4);
+}
+
+.hover-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(37, 67, 54, 0.2) 0%, rgba(37, 67, 54, 0) 50%, rgba(37, 67, 54, 0.2) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hover-card:hover::after {
+    opacity: 1;
+}
+
+.hover-image {
+    height: 35vh;
+    background-size: cover;
+    background-position:unset;
+    transition: transform 0.3s ease;
+}
+
+.hover-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hover-card:hover .hover-image {
+    transform: scale(1.1);
+}
+
+.hover-content {
+    padding: 1.5rem;
+    position: relative;
+    z-index: 2;
+    color: whitesmoke;
+}
+
+.hover-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: whitesmoke;
+    font-family: 'thorin';
+}
+
+.hover-content p {
+    margin-bottom: 1rem;
+}
+
+.hover-read-more {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 0.7rem;
+    background-color: var(--leaf-green);
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-read-more::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+}
+
+.hover-read-more:hover::before {
+    left: 100%;
+}
+
+.hover-read-more:hover {
+    background-color: var(--dark-green);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}

@@ -8,6 +8,11 @@
     src: url("assets/fonts/precious/Precious.ttf")
 }
 
+@font-face {
+    font-family: 'minecraft';
+    src: url('/assets/fonts/Minecraft.ttf');
+}
+
 .text-box-container {
     position: absolute;
     width: 100vw;
@@ -20,9 +25,9 @@
 .text {
     margin: 1vw;
     font-size: 12vw;
-    text-shadow: white 0px 0px 20px;
-    color: white;
-    font-family: "precious";
+    /* text-shadow: #33674e 0px 0px 20px; */
+    color: #33674e;
+    font-family: "minecraft";
     font-weight: bolder;
     cursor: default;
 }
@@ -34,4 +39,10 @@
 
 .island {
     z-index: -99;
+}
+
+@media (max-width: 768px) {
+    .char {
+        font-size: 12vh;
+    }
 }
