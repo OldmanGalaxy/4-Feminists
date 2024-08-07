@@ -16,16 +16,20 @@
   box-sizing: border-box;
 }
 
-.contact-us-container {
+body {
   font-family: 'Lato', sans-serif;
   background-color: var(--main-green);
   color: var(--dark-text);
   line-height: 1.6;
+}
+
+.contact-us-container {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-.contact-header {
+header {
   text-align: center;
   margin-bottom: 40px;
 }
@@ -257,7 +261,7 @@
   .subtitle{
     font-size: 1.15rem;
   }
-  .contact-form h2, .contact-info h2 {
+  .contact-form h2, .contact-info-div h2 {
     font-size: 1.8rem;
   }
   .contact-wrapper {
@@ -283,11 +287,11 @@
     font-size: 1rem;
   }
   
-  .contact-form, .contact-info {
+  .contact-form, .contact-info-div {
     padding: 25px;
   }
   
-  .contact-form h2, .contact-info h2 {
+  .contact-form h2, .contact-info-div h2 {
     font-size: 1.5rem;
   }
   

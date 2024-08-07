@@ -7,7 +7,7 @@ import DailyAnimal from './DailyAnimal.jsx';
 export default function Wildlife() {
   return (
     <>
-    <div className="container">
+    <div className="wildlife-container">
       <section className="national-container">
         <div className="gap"></div>
           <div className="meet-container">
