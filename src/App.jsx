@@ -12,7 +12,7 @@ import Blog5 from './blog5.jsx';
 import Blog6 from './blog6.jsx';
 import Footer from './Footer.jsx';
 import Contact from './Contact.jsx';
-import BlogCard from './BlogCard.jsx';
+import Awareness from './Awareness.jsx';
 
 export default function App() {
     const router = createBrowserRouter([
@@ -45,6 +45,12 @@ export default function App() {
                 <Navbar sticky="true" gap="true" />
                 <About />
                 <Footer />
+            </>
+        },
+        {
+            path: "/awareness",
+            element: <>
+                <Awareness />
             </>
         },
         {
