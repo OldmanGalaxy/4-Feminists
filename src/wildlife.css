@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'thorin';
-    src: url('./assets/fonts/thorin/ttf/thorin.ttf');
+    src: url('assets/fonts/thorin/ttf/thorin.ttf');
 }
 
 @keyframes fade-in {
