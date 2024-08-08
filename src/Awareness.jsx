@@ -1,6 +1,6 @@
 export default function Awareness()
 {
-    window.open('/src/main/index.html', "_self");
+    window.open('/src/aware/index.html', "_self");
 
     return (
         <>
