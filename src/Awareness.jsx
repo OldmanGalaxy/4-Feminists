@@ -4,6 +4,7 @@ export default function Awareness()
 
     return (
         <>
+            <div>This page does not exist</div>
         </>
     );
 }
